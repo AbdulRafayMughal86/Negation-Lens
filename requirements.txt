@@ -1,0 +1,7 @@
+datasets
+matplotlib
+numpy
+pandas
+pyarrow
+rank-bm25
+scikit-learn
