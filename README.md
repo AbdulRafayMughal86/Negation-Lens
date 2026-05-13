@@ -51,7 +51,7 @@ source .venv/bin/activate
 Install requirements:
 
 ```bash
-.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m pip install -r config/requirements.txt
 ```
 
 ## Run Evaluation
