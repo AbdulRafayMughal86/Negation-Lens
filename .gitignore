@@ -26,3 +26,7 @@ results/
 .idea/
 .DS_Store
 tempCodeRunnerFile.py
+
+# Planning and internal docs
+docs/implementation_plan.md
+docs/user_onboarding.md
