@@ -1,4 +1,4 @@
-import random
+from rank_bm25 import BM25Okapi
 
 from metrics import calculate_all_metrics
 from nevir_data import load_nevir_split
@@ -6,23 +6,42 @@ from nevir_data import make_prediction_row
 from nevir_data import make_query_cases
 
 
-RANDOM_SEED = 42
+def tokenize_text(text):
+    lowercase_text = text.lower()
+    words = lowercase_text.split()
+
+    return words
 
 
-def make_random_predictions(split_name):
+def score_query_case_with_bm25(query_case):
+    document_tokens = [
+        tokenize_text(query_case["doc1_text"]),
+        tokenize_text(query_case["doc2_text"]),
+    ]
+
+    bm25_model = BM25Okapi(document_tokens)
+
+    query_tokens = tokenize_text(query_case["query_text"])
+    scores = bm25_model.get_scores(query_tokens)
+
+    doc1_score = scores[0]
+    doc2_score = scores[1]
+
+    return doc1_score, doc2_score
+
+
+def make_bm25_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)
 
-    random_number_generator = random.Random(RANDOM_SEED)
     prediction_rows = []
 
     for query_case in query_cases:
-        doc1_score = random_number_generator.random()
-        doc2_score = random_number_generator.random()
+        doc1_score, doc2_score = score_query_case_with_bm25(query_case)
 
         prediction_row = make_prediction_row(
             split_name,
-            "random",
+            "bm25",
             query_case,
             doc1_score,
             doc2_score,
@@ -42,10 +61,10 @@ def print_metrics(metrics):
 def main():
     split_name = "validation"
 
-    prediction_rows = make_random_predictions(split_name)
+    prediction_rows = make_bm25_predictions(split_name)
     metrics = calculate_all_metrics(prediction_rows)
 
-    print("model: random")
+    print("model: bm25")
     print(f"split: {split_name}")
     print(f"query cases: {len(prediction_rows)}")
     print_metrics(metrics)
