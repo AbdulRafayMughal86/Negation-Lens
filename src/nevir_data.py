@@ -2,6 +2,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from negation_labeler import label_negation_type
+
 
 DATA_FOLDER = Path("data")
 
@@ -91,12 +93,15 @@ def make_prediction_row(split_name, model_name, query_case, doc1_score, doc2_sco
     else:
         correct_rank = 2
 
+    negation_type = label_negation_type(query_case["query_text"])
+
     prediction_row = {
         "split": split_name,
         "model": model_name,
         "row_id": query_case["row_id"],
         "query_label": query_case["query_label"],
         "query_text": query_case["query_text"],
+        "negation_type": negation_type,
         "correct_document_label": query_case["correct_document_label"],
         "predicted_document_label": predicted_document_label,
         "correct_rank": correct_rank,

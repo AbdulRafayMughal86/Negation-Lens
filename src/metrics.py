@@ -86,3 +86,27 @@ def calculate_all_metrics(prediction_rows):
     }
 
     return metrics
+
+
+def calculate_per_type_metrics(prediction_rows):
+    rows_by_type = {}
+
+    for prediction in prediction_rows:
+        negation_type = prediction.get("negation_type", "other")
+        if negation_type not in rows_by_type:
+            rows_by_type[negation_type] = []
+        rows_by_type[negation_type].append(prediction)
+
+    per_type_rows = []
+
+    for negation_type, type_rows in rows_by_type.items():
+        per_type_rows.append({
+            "negation_type": negation_type,
+            "query_accuracy": calculate_query_accuracy(type_rows),
+            "mrr": calculate_mrr(type_rows),
+            "query_cases": len(type_rows),
+        })
+
+    per_type_rows.sort(key=lambda r: r["negation_type"])
+
+    return per_type_rows
