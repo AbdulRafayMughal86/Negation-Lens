@@ -2,14 +2,18 @@ split,row_id,query_label,query_text,correct_document_label,predicted_document_la
 test,1000-2,q1,What island group had always been unoccupied before the Portuguese came?,doc1,doc2,sbert,other
 test,1000-2,q2,What island group had not always been unoccupied before the Portuguese came?,doc2,doc1,bm25,explicit
 test,1000-2,q2,What island group had not always been unoccupied before the Portuguese came?,doc2,doc1,tfidf,explicit
+test,1000-2,q2,What island group had not always been unoccupied before the Portuguese came?,doc2,doc1,monot5_3b,explicit
 test,1000-3,q1,What unoccupied islands id the Portuguese colonize and develop?,doc1,doc2,tfidf,other
 test,1000-3,q1,What unoccupied islands id the Portuguese colonize and develop?,doc1,doc2,sbert,other
 test,1000-3,q2,What occupied islands id the Portuguese colonize and develop?,doc2,doc1,bm25,other
+test,1000-3,q2,What occupied islands id the Portuguese colonize and develop?,doc2,doc1,monot5_3b,other
 test,1001-2,q1,Whose paternal background remains a secret?,doc1,doc2,bm25,other
 test,1001-2,q1,Whose paternal background remains a secret?,doc1,doc2,sbert,other
+test,1001-2,q1,Whose paternal background remains a secret?,doc1,doc2,monot5_3b,other
 test,1001-2,q2,Whose paternal background is no longer a secret?,doc2,doc1,tfidf,explicit
 test,1001-3,q1,For whom was her father's identity not known?,doc1,doc2,tfidf,explicit
 test,1001-3,q1,For whom was her father's identity not known?,doc1,doc2,sbert,explicit
+test,1001-3,q1,For whom was her father's identity not known?,doc1,doc2,monot5_3b,explicit
 test,1001-3,q2,For whom was her father's identity not known resulting in her using Baker as a surname?,doc2,doc1,bm25,explicit
 test,1002-2,q1,Who is attempting to vacation in a familiar area?,doc1,doc2,bm25,other
 test,1002-2,q2,Who is attempting to vacation in an unfamiliar area?,doc2,doc1,bm25,other
@@ -17,13 +21,26 @@ test,1002-2,q2,Who is attempting to vacation in an unfamiliar area?,doc2,doc1,sb
 test,1002-3,q1,Whose ship is attacked by unfamiliar enemies?,doc1,doc2,bm25,other
 test,1002-3,q1,Whose ship is attacked by unfamiliar enemies?,doc1,doc2,sbert,other
 test,1002-3,q2,Whose ship is attacked by familiar enemies?,doc2,doc1,tfidf,other
+test,1003-2,q1,In what country did a majority of household debt exist in Czech denominations?,doc1,doc2,bm25,other
+test,1003-2,q1,In what country did a majority of household debt exist in Czech denominations?,doc1,doc2,tfidf,other
+test,1003-2,q1,In what country did a majority of household debt exist in Czech denominations?,doc1,doc2,sbert,other
 test,1003-2,q2,In what country did a majority of household debt exist in non-Czech denominations?,doc2,doc1,bm25,other
+test,1003-3,q1,"What currency, dissimilar to other post-communist countries, comprises the majority of household debt?",doc1,doc2,bm25,other
+test,1003-3,q1,"What currency, dissimilar to other post-communist countries, comprises the majority of household debt?",doc1,doc2,tfidf,other
+test,1003-3,q1,"What currency, dissimilar to other post-communist countries, comprises the majority of household debt?",doc1,doc2,sbert,other
+test,1003-3,q2,"What currency, similar to other post-communist countries, comprises the majority of household debt?",doc2,doc1,monot5_3b,other
+test,1004-3,q2,Who said that ESP is real in addition to being testable by science?,doc2,doc1,bm25,other
+test,1004-3,q2,Who said that ESP is real in addition to being testable by science?,doc2,doc1,tfidf,other
+test,1004-3,q2,Who said that ESP is real in addition to being testable by science?,doc2,doc1,sbert,other
 test,1005-2,q1,What neighborhood in New York had schools staffed by unexperienced teachers?,doc1,doc2,bm25,other
 test,1005-2,q1,What neighborhood in New York had schools staffed by unexperienced teachers?,doc1,doc2,sbert,other
 test,1005-2,q2,What neighborhood in New York had schools staffed by experienced teachers and unexperienced executives?,doc2,doc1,bm25,other
 test,1005-3,q1,What neighborhood featured schools staffed with neophyte teachers?,doc1,doc2,bm25,other
 test,1005-3,q1,What neighborhood featured schools staffed with neophyte teachers?,doc1,doc2,sbert,other
 test,1005-3,q2,What neighborhood featured schools staffed with jaded teachers?,doc2,doc1,tfidf,other
+test,1006-2,q2,Which movie does fit with the TV series?,doc2,doc1,bm25,other
+test,1006-2,q2,Which movie does fit with the TV series?,doc2,doc1,tfidf,other
+test,1006-2,q2,Which movie does fit with the TV series?,doc2,doc1,sbert,other
 test,1006-3,q1,What other work is this film unconnected to?,doc1,doc2,tfidf,other
 test,1006-3,q1,What other work is this film unconnected to?,doc1,doc2,sbert,other
 test,1006-3,q2,What other work is this film connected to?,doc2,doc1,bm25,other
@@ -34,25 +51,39 @@ test,1007-3,q1,Who was nervous to audition for Galaxy Quest due to being new to 
 test,1007-3,q2,Who was nervous to audition for Galaxy Quest although he was not new to the acting scene?,doc2,doc1,tfidf,explicit
 test,1007-3,q2,Who was nervous to audition for Galaxy Quest although he was not new to the acting scene?,doc2,doc1,sbert,explicit
 test,1008-2,q1,What do oysters produce that are commonly around half an inch in diameter?,doc1,doc2,bm25,other
+test,1008-2,q1,What do oysters produce that are commonly around half an inch in diameter?,doc1,doc2,monot5_3b,other
 test,1008-2,q2,What do oysters produce that are rarely around half an inch in diameter?,doc2,doc1,tfidf,other
 test,1008-2,q2,What do oysters produce that are rarely around half an inch in diameter?,doc2,doc1,sbert,other
 test,1008-3,q2,What can be found in sizes up to 1 cm?,doc2,doc1,tfidf,other
 test,1008-3,q2,What can be found in sizes up to 1 cm?,doc2,doc1,sbert,other
+test,1009-2,q1,What country purchased two Sea Guardians as is from the United States?,doc1,doc2,bm25,other
+test,1009-2,q1,What country purchased two Sea Guardians as is from the United States?,doc1,doc2,tfidf,other
+test,1009-2,q1,What country purchased two Sea Guardians as is from the United States?,doc1,doc2,sbert,other
 test,1009-2,q2,What country bought two Sea Guardians from the United States to be overhauled by their own armed services?,doc2,doc1,bm25,other
+test,1009-3,q1,What drone has a non-armed version?,doc1,doc2,bm25,other
+test,1009-3,q1,What drone has a non-armed version?,doc1,doc2,tfidf,other
+test,1009-3,q1,What drone has a non-armed version?,doc1,doc2,sbert,other
 test,1009-3,q2,What drone has no unarmed versions?,doc2,doc1,tfidf,explicit
 test,1009-3,q2,What drone has no unarmed versions?,doc2,doc1,sbert,explicit
+test,1009-3,q2,What drone has no unarmed versions?,doc2,doc1,monot5_3b,explicit
 test,1010-2,q1,What slogan is approved by citizens?,doc1,doc2,tfidf,other
 test,1010-2,q1,What slogan is approved by citizens?,doc1,doc2,sbert,other
+test,1010-2,q1,What slogan is approved by citizens?,doc1,doc2,monot5_3b,other
 test,1010-2,q2,What slogan is approved by local government?,doc2,doc1,bm25,other
 test,1010-3,q1,What city has an unrecognized motto referring to protecting small businesses from being overrun by large corporations?,doc1,doc2,tfidf,other
 test,1010-3,q2,What city has an official motto referring to protecting small businesses from being overrun by large corporations?,doc2,doc1,bm25,other
 test,1010-3,q2,What city has an official motto referring to protecting small businesses from being overrun by large corporations?,doc2,doc1,sbert,other
+test,1010-3,q2,What city has an official motto referring to protecting small businesses from being overrun by large corporations?,doc2,doc1,monot5_3b,other
 test,1011-3,q1,What is challenging to learn because it is unique from other languages?,doc1,doc2,tfidf,other
 test,1011-3,q1,What is challenging to learn because it is unique from other languages?,doc1,doc2,sbert,other
 test,1011-3,q2,What is challenging to learn because it is not unique from other languages?,doc2,doc1,bm25,explicit
+test,1011-3,q2,What is challenging to learn because it is not unique from other languages?,doc2,doc1,monot5_3b,explicit
 test,1012-2,q1,"Which publisher of ""Lady Chatterley's Lover"" beat an obscenity charge?",doc1,doc2,bm25,other
 test,1012-2,q2,"Which publisher of ""Lady Chatterley's Lover"" did not beat an obscenity charge?",doc2,doc1,tfidf,explicit
 test,1012-2,q2,"Which publisher of ""Lady Chatterley's Lover"" did not beat an obscenity charge?",doc2,doc1,sbert,explicit
+test,1012-3,q1,What novel was the subject of a failed UK prosecution in 1961 against Penguin Books?,doc1,doc2,bm25,other
+test,1012-3,q1,What novel was the subject of a failed UK prosecution in 1961 against Penguin Books?,doc1,doc2,tfidf,other
+test,1012-3,q1,What novel was the subject of a failed UK prosecution in 1961 against Penguin Books?,doc1,doc2,sbert,other
 test,1014-2,q1,What type of government hates inherited privilege?,doc1,doc2,tfidf,other
 test,1014-2,q1,What type of government hates inherited privilege?,doc1,doc2,sbert,other
 test,1014-2,q2,What type of government hates supports inherited privilege?,doc2,doc1,bm25,other
@@ -62,40 +93,9 @@ test,1014-3,q2,Whose hereditary nature is said to not be at odds with acceptance
 test,1015-2,q1,What is not used habitually anymore?,doc1,doc2,sbert,explicit
 test,1015-2,q2,What is not used culinarily anymore?,doc2,doc1,bm25,explicit
 test,1015-2,q2,What is not used culinarily anymore?,doc2,doc1,tfidf,explicit
+test,1015-3,q2,What compounds have not been discontinued for use in routine fire extinguishers?,doc2,doc1,bm25,explicit
+test,1015-3,q2,What compounds have not been discontinued for use in routine fire extinguishers?,doc2,doc1,tfidf,explicit
+test,1015-3,q2,What compounds have not been discontinued for use in routine fire extinguishers?,doc2,doc1,sbert,explicit
 test,1016-2,q1,Who lost both friends and colleagues in flying accidents?,doc1,doc2,bm25,other
 test,1016-2,q2,Who lost friends while colleagues survived flying accidents?,doc2,doc1,sbert,other
 test,1016-3,q1,Whose aerobatic friends died in separate incidents?,doc1,doc2,bm25,other
-test,1016-3,q2,Whose aerobatic friends did not die in separate incidents?,doc2,doc1,tfidf,explicit
-test,1017-2,q1,What sector's prices reached unrivaled levels with possible adaptations for changing dollar values?,doc1,doc2,tfidf,other
-test,1017-2,q1,What sector's prices reached unrivaled levels with possible adaptations for changing dollar values?,doc1,doc2,sbert,other
-test,1017-2,q2,What sector's prices reached  unrivaled levels when unadapted for changing dollar values?,doc2,doc1,bm25,other
-test,1017-3,q1,What type of prices attained unparalleled heights in the bubble stage?,doc1,doc2,tfidf,other
-test,1017-3,q2,What type of prices avoided attaining unparalleled heights in the bubble stage?,doc2,doc1,bm25,other
-test,1017-3,q2,What type of prices avoided attaining unparalleled heights in the bubble stage?,doc2,doc1,sbert,other
-test,1018-2,q1,Who declined to shake Zhou Enlai's hand?,doc1,doc2,tfidf,other
-test,1018-2,q1,Who declined to shake Zhou Enlai's hand?,doc1,doc2,sbert,other
-test,1018-2,q2,Who did not decline to shake Zhou Enlai's hand?,doc2,doc1,bm25,explicit
-test,1019-2,q1,Who stopped publicly opposing the British?,doc1,doc2,bm25,other
-test,1019-2,q1,Who stopped publicly opposing the British?,doc1,doc2,sbert,other
-test,1019-2,q2,Who publicly opposed the British?,doc2,doc1,tfidf,other
-test,1020-3,q1,What team became the first to finish accruing not a single loss?,doc1,doc2,sbert,explicit
-test,1020-3,q2,What team became the first to finish accruing not a single victory?,doc2,doc1,bm25,explicit
-test,1020-3,q2,What team became the first to finish accruing not a single victory?,doc2,doc1,tfidf,explicit
-test,1022-2,q1,Who resents Gloucester's unlawful position?,doc1,doc2,bm25,other
-test,1022-2,q2,Who resents Edgar's unlawful position?,doc2,doc1,tfidf,other
-test,1022-3,q1,Which son is jealous of Edgar's legitimacy?,doc1,doc2,bm25,other
-test,1022-3,q1,Which son is jealous of Edgar's legitimacy?,doc1,doc2,sbert,other
-test,1022-3,q2,Which son is jealous of Edgar's birth order?,doc2,doc1,tfidf,other
-test,1023-2,q1,What was the native country of the unidentified traveler who saved the town from the vampire?,doc1,doc2,bm25,other
-test,1023-2,q1,What was the native country of the unidentified traveler who saved the town from the vampire?,doc1,doc2,sbert,other
-test,1023-2,q2,What was the native country of the identified traveler who saved the town from the vampire?,doc2,doc1,tfidf,other
-test,1023-3,q1,What town was visited by a foreign Hungarian traveler?,doc1,doc2,bm25,other
-test,1023-3,q1,What town was visited by a foreign Hungarian traveler?,doc1,doc2,sbert,other
-test,1023-3,q2,What town was visited by an as yet unknown Hungarian traveler?,doc2,doc1,tfidf,other
-test,1025-2,q2,Which football team's owner was admired by the fans and not the front office?,doc2,doc1,tfidf,explicit
-test,1025-3,q1,What team owner had become renowned among most local fans?,doc1,doc2,tfidf,other
-test,1025-3,q1,What team owner had become renowned among most local fans?,doc1,doc2,sbert,other
-test,1025-3,q2,What team owner had not become renowned among most local fans?,doc2,doc1,bm25,explicit
-test,1026-2,q1,Which group has a silence requirement?,doc1,doc2,sbert,other
-test,1026-2,q2,Which group does not have a silence requirement?,doc2,doc1,bm25,explicit
-test,1026-2,q2,Which group does not have a silence requirement?,doc2,doc1,tfidf,explicit

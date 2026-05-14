@@ -15,3 +15,7 @@ validation,sbert,comparative,0.5,0.75,2
 validation,sbert,explicit,0.55,0.775,140
 validation,sbert,implicit,0.2,0.6,5
 validation,sbert,other,0.5148514851485149,0.7574257425742574,303
+validation,monot5_3b,comparative,0.5,0.75,2
+validation,monot5_3b,explicit,0.5714285714285714,0.7857142857142857,140
+validation,monot5_3b,implicit,0.8,0.9,5
+validation,monot5_3b,other,0.7458745874587459,0.8729372937293729,303

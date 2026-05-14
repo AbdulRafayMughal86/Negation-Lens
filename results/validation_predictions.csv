@@ -1799,3 +1799,453 @@ validation,sbert,567-2,q1,Which nationality of soldiers is it unknown how many o
 validation,sbert,567-2,q2,Which nationality of soldiers is it now known how many of fell in Vaksdal?,other,doc2,doc2,1,0.5722192525863647,0.5951585173606873
 validation,sbert,567-3,q1,What non-Norwegian nationality of fighters lost an undetermined amount of men at Vaksdal?,other,doc1,doc2,2,0.6296757459640503,0.6508076786994934
 validation,sbert,567-3,q2,What non-Norwegian  nationality of soldiers lost a known amount of fighters at Vaksdal?,other,doc2,doc2,1,0.7069486379623413,0.7203667163848877
+validation,monot5_3b,444-2,q1,What can usually cause an offender to get arrested in most jurisdictions?,other,doc1,doc1,1,0.66943359375,0.52734375
+validation,monot5_3b,444-2,q2,What cannot usually cause an offender to get arrested in most jurisdictions?,explicit,doc2,doc2,1,0.54638671875,0.64501953125
+validation,monot5_3b,444-3,q1,What offense hardly ever results in the criminal going to jail for it after their first offense?,other,doc1,doc1,1,0.89990234375,0.481689453125
+validation,monot5_3b,444-3,q2,What offense always results in the criminal going to jail for it after their first offense?,other,doc2,doc2,1,0.315185546875,0.57666015625
+validation,monot5_3b,445-2,q1,Who did SSI invite to the X Games as an exhibition that was informal?,other,doc1,doc1,1,0.99658203125,0.99560546875
+validation,monot5_3b,445-2,q2,Who did SSI invite to the X Games as an exhibition that was not informal?,explicit,doc2,doc1,2,0.9951171875,0.9951171875
+validation,monot5_3b,445-3,q1,Which team took part in the 1998 ESPN X Games as a casual demonstration?,other,doc1,doc1,1,0.9912109375,0.9912109375
+validation,monot5_3b,445-3,q2,Which team took part in the 1998 ESPN X Games as a formal demonstration?,other,doc2,doc2,1,0.990234375,0.9921875
+validation,monot5_3b,446-2,q1,Who did not agree with each other in terms of political views and attitudes?,explicit,doc1,doc1,1,0.9658203125,0.89794921875
+validation,monot5_3b,446-2,q2,Who agreed with each other in terms of attitudes and not political views?,explicit,doc2,doc2,1,0.78076171875,0.95166015625
+validation,monot5_3b,446-3,q1,Who disagreed with each other about political views and attitudes?,other,doc1,doc1,1,0.82666015625,0.74658203125
+validation,monot5_3b,446-3,q2,Who agreed with each other about political views and attitudes?,other,doc2,doc2,1,0.88720703125,0.8935546875
+validation,monot5_3b,447-2,q1,Which credit card companies disallow sellers from having upper and lower spending limits?,other,doc1,doc1,1,0.93994140625,0.9287109375
+validation,monot5_3b,447-2,q2,Which credit card companies disallow sellers from having upper and allow lower spending limits?,other,doc2,doc1,2,0.9189453125,0.91357421875
+validation,monot5_3b,447-3,q1,Which two companies forbid minimum and maximum purchase sizes?,other,doc1,doc1,1,0.98779296875,0.96533203125
+validation,monot5_3b,447-3,q2,Which two companies do not forbid minimum and maximum purchase sizes?,explicit,doc2,doc1,2,0.978515625,0.9765625
+validation,monot5_3b,448-2,q1,Which song is not often heard in current times?,explicit,doc1,doc2,2,0.943359375,0.96044921875
+validation,monot5_3b,448-2,q2,Which song was not often heard during Foster's day?,explicit,doc2,doc2,1,0.986328125,0.99755859375
+validation,monot5_3b,448-3,q1,Which song is most famous?,other,doc1,doc2,2,0.0262603759765625,0.046112060546875
+validation,monot5_3b,448-3,q2,who composed the tune believe me?,other,doc2,doc1,2,0.97216796875,0.970703125
+validation,monot5_3b,449-2,q1,Which volcano before its eruption in 1991 did not have any distinguishing characteristics?,explicit,doc1,doc1,1,0.9912109375,0.9912109375
+validation,monot5_3b,449-2,q2,Which volcano before its eruption in 1991 had one distinguishing characteristic?,other,doc2,doc2,1,0.98486328125,0.986328125
+validation,monot5_3b,449-3,q1,What volcano that was indistinct erupted in 1991?,other,doc1,doc1,1,0.98095703125,0.966796875
+validation,monot5_3b,449-3,q2,What volcano that was not indistinct erupted in 1991?,explicit,doc2,doc1,2,0.9541015625,0.94677734375
+validation,monot5_3b,450-2,q1,"Which governing body, like the federal government, denied him full reimbursement?",other,doc1,doc1,1,0.9951171875,0.99462890625
+validation,monot5_3b,450-2,q2,"Which governing body, unlike the federal government, granted him full reimbursement?",other,doc2,doc2,1,0.9794921875,0.9912109375
+validation,monot5_3b,450-3,q1,"Which governing body, aside from the New York legislature, prohibited Tompkins full reimbursement?",other,doc1,doc1,1,0.99609375,0.994140625
+validation,monot5_3b,450-3,q2,"Which governing body, aside from the New York legislature, provided Tompkins full reimbursement?",other,doc2,doc2,1,0.99560546875,0.99658203125
+validation,monot5_3b,451-2,q1,Which country did not resist the acquisition of the Austrian anthem's melody by Germany?,explicit,doc1,doc1,1,0.99462890625,0.99365234375
+validation,monot5_3b,451-2,q2,Which country didn't oppose the acquisition of the Austrian anthem's melody?,explicit,doc2,doc1,2,0.9970703125,0.9970703125
+validation,monot5_3b,451-3,q1,What year did the unchallenged adoption of the Austrian anthem by their neighboring country take place?,other,doc1,doc1,1,0.994140625,0.98876953125
+validation,monot5_3b,451-3,q2,What year did the supported adoption of the Austrian anthem by their neighboring country take place?,other,doc2,doc2,1,0.994140625,0.99462890625
+validation,monot5_3b,452-2,q1,What prohibited ideology did William Penn align with?,other,doc1,doc1,1,0.93603515625,0.91650390625
+validation,monot5_3b,452-2,q2,What accepted ideology did William Penn not align with?,explicit,doc2,doc2,1,0.90869140625,0.9091796875
+validation,monot5_3b,452-3,q1,What forbidden religious ideology was William Penn preaching?,other,doc1,doc1,1,0.986328125,0.9794921875
+validation,monot5_3b,452-3,q2,What unforbidden religious ideology was William Penn preaching?,other,doc2,doc1,2,0.98291015625,0.97900390625
+validation,monot5_3b,453-2,q1,"How were many casualties handled, which led to maggots becoming useful?",other,doc1,doc1,1,0.99365234375,0.99365234375
+validation,monot5_3b,453-2,q2,"How were the surroundings handled, which led to maggots becoming useful?",other,doc2,doc2,1,0.97607421875,0.9775390625
+validation,monot5_3b,455-2,q1,"What type of stitches, unlik shuttle-made tatting, readily unravel?",other,doc1,doc1,1,0.98974609375,0.97119140625
+validation,monot5_3b,455-2,q2,"What type of stitches, unlike shuttle-made tatting, do not readily unravel?",explicit,doc2,doc2,1,0.951171875,0.9736328125
+validation,monot5_3b,455-3,q1,What type of stitches unravel more easily than tatting made with a shuttle?,other,doc1,doc1,1,0.99072265625,0.98095703125
+validation,monot5_3b,455-3,q2,What type of stitches unravel as easily as tatting made with a shuttle?,other,doc2,doc2,1,0.98583984375,0.9873046875
+validation,monot5_3b,456-2,q1,What is a casual name synonym for quotation marks?,other,doc1,doc1,1,0.9921875,0.99169921875
+validation,monot5_3b,456-2,q2,What is an official synonym for quotation marks?,other,doc2,doc1,2,0.9765625,0.97509765625
+validation,monot5_3b,456-3,q1,Where are the items known unconventionally as speechmarks usually placed in a sentence?,other,doc1,doc1,1,0.9892578125,0.98583984375
+validation,monot5_3b,456-3,q2,Where are the items known conventionally as speechmarks usually placed in a sentence?,other,doc2,doc1,2,0.98681640625,0.98681640625
+validation,monot5_3b,457-2,q1,"What type of teeth, including incisors and canines, do adults lack?",implicit,doc1,doc1,1,0.98291015625,0.97900390625
+validation,monot5_3b,457-2,q2,"What type of teeth, other than incisors and canines, do adults not lack?",explicit,doc2,doc2,1,0.96484375,0.97607421875
+validation,monot5_3b,457-3,q1,"What type of teeth are missing from the mouth of a manatee, and are replaced by cheek teeth?",other,doc1,doc1,1,0.9951171875,0.98974609375
+validation,monot5_3b,457-3,q2,"What type of teeth are not missing from the mouth of a manatee, but are joined by cheek teeth?",explicit,doc2,doc1,2,0.98828125,0.98486328125
+validation,monot5_3b,459-3,q1,Whose bank nationalization of 1947 was deemed unlawful by the High Court?,other,doc1,doc1,1,0.9873046875,0.93798828125
+validation,monot5_3b,459-3,q2,Whose bank nationalization of 1947 was not deemed unlawful by the High Court?,explicit,doc2,doc2,1,0.9716796875,0.974609375
+validation,monot5_3b,460-2,q1,Which man has an absence of evidence against him?,other,doc1,doc1,1,0.58740234375,0.435302734375
+validation,monot5_3b,460-2,q2,Which woman has an absence of evidence against her?,other,doc2,doc2,1,0.0024929046630859375,0.07476806640625
+validation,monot5_3b,460-3,q1,Who was condemned to Brauweiler in 1944 with no evidence against him?,explicit,doc1,doc2,2,0.9599609375,0.96533203125
+validation,monot5_3b,460-3,q2,Who was condemned to Brauweiler in 1944 with much evidence against him?,other,doc2,doc2,1,0.9169921875,0.9814453125
+validation,monot5_3b,461-2,q1,What column did not come out ordinarily in the 1980s?,explicit,doc1,doc1,1,0.998046875,0.998046875
+validation,monot5_3b,461-2,q2,What column came out out ordinarily in the 1980s?,other,doc2,doc2,1,0.998046875,0.99853515625
+validation,monot5_3b,461-3,q1,What title started to show up sporadically in the publication in the 1980s?,other,doc1,doc1,1,0.998046875,0.99609375
+validation,monot5_3b,461-3,q2,What title started to show up with regularity in the publication in the 1980s?,other,doc2,doc2,1,0.99658203125,0.998046875
+validation,monot5_3b,462-2,q1,What does the level of national leaders lead to?,other,doc1,doc2,2,0.89501953125,0.9091796875
+validation,monot5_3b,462-2,q2,Who mislead with the council?,other,doc2,doc1,2,0.13427734375,0.10284423828125
+validation,monot5_3b,462-3,q1,Who has been meeting unofficially at the European summits beginning in the 1960s?,other,doc1,doc1,1,0.99365234375,0.98974609375
+validation,monot5_3b,462-3,q2,Who has been meeting officially at the European summits beginning in the 1960s?,other,doc2,doc2,1,0.9853515625,0.99267578125
+validation,monot5_3b,463-2,q1,Which incident in Aden were the assailants never identified?,explicit,doc1,doc1,1,0.998046875,0.99560546875
+validation,monot5_3b,463-2,q2,Which incident in Aden were the assailants immediately identified?,other,doc2,doc2,1,0.99462890625,0.99609375
+validation,monot5_3b,463-3,q1,why the jihadist organizations currently active in the country?,other,doc1,doc2,2,0.970703125,0.9755859375
+validation,monot5_3b,463-3,q2,why they identities of the attackers was confirmed from video footage?,other,doc2,doc2,1,0.279052734375,0.9912109375
+validation,monot5_3b,464-2,q1,Who led a 1046 expedition against the Welsh that was unsuccessful?,other,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,464-2,q2,Who led a 1046 expedition against the Welsh that was not unsuccessful?,explicit,doc2,doc2,1,0.99560546875,0.99658203125
+validation,monot5_3b,464-3,q1,Who led a failed quest against the Welsh in 1046?,other,doc1,doc1,1,0.99658203125,0.99365234375
+validation,monot5_3b,464-3,q2,Who led a successful quest against the Welsh in 1046?,other,doc2,doc2,1,0.994140625,0.99560546875
+validation,monot5_3b,465-2,q1,What movie was panned critically while the Stooges were commended for their performance?,other,doc1,doc1,1,0.99609375,0.99365234375
+validation,monot5_3b,465-2,q2,What movie was commended critically while the Stooges were panned for their performance?,other,doc2,doc2,1,0.99462890625,0.99560546875
+validation,monot5_3b,465-3,q1,What film bombed critically while the Stooges' performances were praised?,other,doc1,doc1,1,0.9970703125,0.99609375
+validation,monot5_3b,465-3,q2,What film succeeded critically while the Stooges' performances were also praised?,other,doc2,doc1,2,0.99658203125,0.99658203125
+validation,monot5_3b,466-2,q1,What composer envisaged his central character a hero nor villain?,other,doc1,doc1,1,0.9951171875,0.99365234375
+validation,monot5_3b,466-2,q2,What composer did not envisage his central character a hero nor villain?,explicit,doc2,doc1,2,0.99462890625,0.99267578125
+validation,monot5_3b,466-3,q1,The composer had seen the central figure not pertaining to what?,explicit,doc1,doc1,1,0.99267578125,0.9921875
+validation,monot5_3b,466-3,q2,The composer had seen the central figure as coinciding to what?,other,doc2,doc2,1,0.990234375,0.99072265625
+validation,monot5_3b,467-2,q1,What unlawful son of Pippin was promised Italy?,other,doc1,doc1,1,0.9912109375,0.9853515625
+validation,monot5_3b,467-2,q2,What not unlawful son of Pippin was promised Italy?,explicit,doc2,doc1,2,0.994140625,0.9921875
+validation,monot5_3b,467-3,q1,What country was given to Pippin's son who was born out of wedlock?,other,doc1,doc1,1,0.98828125,0.9638671875
+validation,monot5_3b,467-3,q2,What country was given to Pippin's son who was born within wedlock?,other,doc2,doc2,1,0.953125,0.978515625
+validation,monot5_3b,468-2,q1,"What material untouched by fire, was mixed with ash, oils, and sugars to form a cake on the pipe walls?",other,doc1,doc2,2,0.978515625,0.986328125
+validation,monot5_3b,468-2,q2,"What material, not untouched by fire, was mixed with ash, oils, and sugars to form a cake on the pipe walls?",explicit,doc2,doc2,1,0.97802734375,0.98486328125
+validation,monot5_3b,468-3,q1,What unused tobacco prevents a briar pipe from burning out?,other,doc1,doc1,1,0.9970703125,0.99560546875
+validation,monot5_3b,468-3,q2,What used tobacco prevents a briar pipe from burning out?,other,doc2,doc1,2,0.99755859375,0.99755859375
+validation,monot5_3b,469-2,q1,"What language is ""Life of Anthony"", which depicts Anthony as illiterate, written in",other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,469-2,q2,"What language is ""Life of Anthony"", which depicts Anthony as not illiterate, written in",explicit,doc2,doc2,1,0.99658203125,0.9970703125
+validation,monot5_3b,469-3,q1,Which holy man was described by Athanasius as unable to read?,other,doc1,doc1,1,0.99267578125,0.87060546875
+validation,monot5_3b,469-3,q2,Which holy man was described by Athanasius as scholastic?,other,doc2,doc2,1,0.95556640625,0.98388671875
+validation,monot5_3b,470-2,q1,What can usually be seen alongside the Doctor on his travels?,other,doc1,doc2,2,0.98876953125,0.98974609375
+validation,monot5_3b,470-2,q2,What is usually not seen alongside the Doctor on his travels?,explicit,doc2,doc2,1,0.96240234375,0.99169921875
+validation,monot5_3b,470-3,q1,Who travels alone seldomly?,other,doc1,doc1,1,0.9912109375,0.9873046875
+validation,monot5_3b,470-3,q2,Who does not travel alone seldomly?,explicit,doc2,doc1,2,0.98291015625,0.9521484375
+validation,monot5_3b,471-2,q1,Who was able to memorize word-for-word chunks of the Bible even though he could not read?,explicit,doc1,doc1,1,0.947265625,0.931640625
+validation,monot5_3b,471-2,q2,Who was able to memorize word-for-word chunks of the Bible after he became literate on his own?,other,doc2,doc2,1,0.9052734375,0.94482421875
+validation,monot5_3b,471-3,q1,Which freedman was unable to read yet could still memorize large parts of the Bible perfectly?,other,doc1,doc1,1,0.994140625,0.98828125
+validation,monot5_3b,471-3,q2,Which freedman was pedagogic and proved it by memorizing large parts of the Bible perfectly?,other,doc2,doc2,1,0.9931640625,0.994140625
+validation,monot5_3b,472-2,q1,What opera that was incomplete did Mozart show to Stephanie?,other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,472-2,q2,What opera that was not incomplete did Mozart show to Stephanie?,explicit,doc2,doc2,1,0.99658203125,0.9970703125
+validation,monot5_3b,472-3,q1,"Who showed his opera ""Zaide"", which was incomplete, to Stephanie?",other,doc1,doc1,1,0.99658203125,0.9951171875
+validation,monot5_3b,472-3,q2,"Who showed his opera ""Zaide"", which was not incomplete, to Stephanie?",explicit,doc2,doc1,2,0.99609375,0.99609375
+validation,monot5_3b,473-2,q1,What renaissance writer tried to eschew any preference for a government system?,other,doc1,doc1,1,0.998046875,0.99755859375
+validation,monot5_3b,473-2,q2,What renaissance writer did not try to eschew any preference for a government system?,explicit,doc2,doc1,2,0.998046875,0.9970703125
+validation,monot5_3b,473-3,q1,"What genre of writers, like Machiavelli, refrained from being outspoken about government-system preferences?",other,doc1,doc1,1,0.998046875,0.9970703125
+validation,monot5_3b,473-3,q2,"What genre of writers, like Machiavelli, did not refrain from being outspoken about government-system preferences?",explicit,doc2,doc1,2,0.998046875,0.99755859375
+validation,monot5_3b,474-2,q1,What has not alleviated the lack of skilled laborers?,explicit,doc1,doc2,2,0.7685546875,0.97705078125
+validation,monot5_3b,474-2,q2,What has alleviated the lack of skilled laborers?,implicit,doc2,doc2,1,0.7509765625,0.99267578125
+validation,monot5_3b,474-3,q1,"What, along with war with Ethiopia, has not alleviated an absence of laborers?",explicit,doc1,doc1,1,0.9892578125,0.9482421875
+validation,monot5_3b,474-3,q2,"What, along with war with Ethiopia, has alleviated an absence of laborers?",other,doc2,doc1,2,0.98974609375,0.96875
+validation,monot5_3b,475-2,q1,"What system is it that the most primitive, diplobastic animal phyla lack?",implicit,doc1,doc1,1,0.99462890625,0.99462890625
+validation,monot5_3b,475-2,q2,"What system is it that the most primitive, diplobastic animal phyla never lack?",explicit,doc2,doc2,1,0.99169921875,0.9921875
+validation,monot5_3b,475-3,q1,Which diploblastic animal does not have a circulatory system?,explicit,doc1,doc1,1,0.9306640625,0.7119140625
+validation,monot5_3b,475-3,q2,What diploblastic animal possesses a circulatory system?,other,doc2,doc2,1,0.9580078125,0.95849609375
+validation,monot5_3b,476-2,q1,Which group refused drugs more often than the Narconon group?,other,doc1,doc1,1,0.998046875,0.99658203125
+validation,monot5_3b,476-2,q2,Which group accepted drug use more often than Narconon group?,other,doc2,doc1,2,0.9970703125,0.99560546875
+validation,monot5_3b,476-3,q1,Which group was shown to withstand pressures to take drugs more so than the Narconon group?,other,doc1,doc1,1,0.99853515625,0.998046875
+validation,monot5_3b,476-3,q2,Which group was shown to withstand pressures to take drugs less than the Narconon group?,comparative,doc2,doc1,2,0.998046875,0.99755859375
+validation,monot5_3b,477-2,q1,What did Gwen Stacy take with her?,other,doc1,doc2,2,0.9765625,0.9951171875
+validation,monot5_3b,477-2,q2,What didn't Gwen Stacy take with her?,explicit,doc2,doc2,1,0.90380859375,0.9970703125
+validation,monot5_3b,477-3,q1,Who was unappreciative of the outfit she wore?,other,doc1,doc1,1,0.9638671875,0.5615234375
+validation,monot5_3b,477-3,q2,Who was appreciative of the outfit she wore?,other,doc2,doc2,1,0.8291015625,0.95166015625
+validation,monot5_3b,478-2,q1,What single was unpopular Down Under?,other,doc1,doc1,1,0.990234375,0.98681640625
+validation,monot5_3b,478-2,q2,What single was not unpopular Down Under?,explicit,doc2,doc2,1,0.984375,0.986328125
+validation,monot5_3b,478-3,q1,When the third single eagle was released?,other,doc1,doc1,1,0.9970703125,0.99658203125
+validation,monot5_3b,478-3,q2,which album was in the topped album charts in the UK?,other,doc2,doc1,2,0.96484375,0.96337890625
+validation,monot5_3b,479-2,q1,Which game is unlike Bridge in that it is a trick-avoidance game?,other,doc1,doc2,2,0.99560546875,0.99658203125
+validation,monot5_3b,479-2,q2,Which game is similar to Bridge in that it is a trick-avoidance game?,other,doc2,doc2,1,0.98583984375,0.9892578125
+validation,monot5_3b,479-3,q1,Which game is not usual among Whist variants for some reason?,explicit,doc1,doc1,1,0.9970703125,0.97705078125
+validation,monot5_3b,479-3,q2,Which game is common among Whist variants for some reason?,other,doc2,doc2,1,0.99169921875,0.99609375
+validation,monot5_3b,480-2,q1,"What religion's practitioners are assumed, incorrectly, to worship Satan?",other,doc1,doc2,2,0.998046875,0.99853515625
+validation,monot5_3b,480-2,q2,"What religion's practitioners are assumed, not incorrectly, to worship Satan?",explicit,doc2,doc1,2,0.998046875,0.998046875
+validation,monot5_3b,480-3,q1,Which religions practitioners were wrongly assumed to worship Satan?,other,doc1,doc1,1,0.99755859375,0.99609375
+validation,monot5_3b,480-3,q2,Which religions practitioners were rightly assumed to worship Satan?,other,doc2,doc2,1,0.99560546875,0.99755859375
+validation,monot5_3b,483-2,q1,What school subject did Louis Armstrong begin?,other,doc1,doc1,1,0.97900390625,0.97509765625
+validation,monot5_3b,483-2,q2,What school subject did Louis Armstrong forego?,other,doc2,doc1,2,0.96728515625,0.96240234375
+validation,monot5_3b,483-3,q1,Who quit his local community college because he could not pay the fees?,explicit,doc1,doc1,1,0.9873046875,0.97802734375
+validation,monot5_3b,483-3,q2,Who quit his local community college despite being able to pay the fees?,other,doc2,doc2,1,0.9794921875,0.98681640625
+validation,monot5_3b,484-2,q1,Who issued two resolutions denouncing elections results that were unclear?,other,doc1,doc1,1,0.99658203125,0.99658203125
+validation,monot5_3b,484-2,q2,Who issued two resolutions denouncing elections results that were not unclear?,explicit,doc2,doc1,2,0.99609375,0.9951171875
+validation,monot5_3b,484-3,q1,Which Parliament issued 2 resolutions denouncing election results that were uncertain?,other,doc1,doc1,1,0.9951171875,0.9912109375
+validation,monot5_3b,484-3,q2,Which Parliament issued 2 resolutions denouncing election results that were certain?,other,doc2,doc2,1,0.990234375,0.994140625
+validation,monot5_3b,485-2,q1,Who has never controlled the north coast of Borneo? (Good because it is only relevant to paragraph 1)?,explicit,doc1,doc2,2,5.608797073364258e-05,6.204843521118164e-05
+validation,monot5_3b,485-2,q2,Who lost control of the north coast of Borneo?  (Good because it is only relevant to paragraph 2)?,other,doc2,doc1,2,6.604194641113281e-05,6.204843521118164e-05
+validation,monot5_3b,485-3,q1,Which person was the dishonorable secretary that Orsini increasingly relied on?,other,doc1,doc1,1,0.998046875,0.99658203125
+validation,monot5_3b,485-3,q2,Which person was the honorable secretary that Orsini increasingly relied on?,other,doc2,doc1,2,0.998046875,0.998046875
+validation,monot5_3b,487-2,q1,What political office did Heinlein fail to secure for himself?,other,doc1,doc1,1,0.9892578125,0.98876953125
+validation,monot5_3b,487-2,q2,What political office did Heinlein secure for himself?,other,doc2,doc2,1,0.9853515625,0.98779296875
+validation,monot5_3b,487-3,q1,Who had a run for California State Assembly in 1938 that was a failure?,other,doc1,doc1,1,0.990234375,0.88720703125
+validation,monot5_3b,487-3,q2,Who had a run for California State Assembly in 1938 that was a success?,other,doc2,doc2,1,0.974609375,0.99169921875
+validation,monot5_3b,488-2,q1,Which drum line program was criticized as ineffectual?,other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,488-2,q2,Which drum line program was not criticized as ineffectual?,explicit,doc2,doc2,1,0.990234375,0.99267578125
+validation,monot5_3b,488-3,q1,Which drum line program was criticized as ineffectual?,other,doc1,doc1,1,0.99755859375,0.994140625
+validation,monot5_3b,488-3,q2,Which drum line program was criticized as outmoded?,other,doc2,doc1,2,0.99755859375,0.99658203125
+validation,monot5_3b,489-2,q1,When team joined on season?,other,doc1,doc2,2,0.0002532005310058594,0.00028014183044433594
+validation,monot5_3b,489-2,q2,When team not joined on season?,explicit,doc2,doc2,1,0.0002982616424560547,0.00031256675720214844
+validation,monot5_3b,489-3,q1,Which University team won 11 matches in 1906?,other,doc1,doc2,2,0.99560546875,0.99755859375
+validation,monot5_3b,489-3,q2,Which University team played in 11 matches in 1906?,other,doc2,doc2,1,0.99609375,0.998046875
+validation,monot5_3b,490-2,q1,What particles were not expected to have enough energy to split a heavier atom?,explicit,doc1,doc1,1,0.9853515625,0.93115234375
+validation,monot5_3b,490-2,q2,What particles were expected to have enough energy to split a heavier atom?,other,doc2,doc1,2,0.974609375,0.97265625
+validation,monot5_3b,490-3,q1,What particles were not expected to have enough energy to split a heavier atom?,explicit,doc1,doc1,1,0.9853515625,0.921875
+validation,monot5_3b,490-3,q2,What particles were expected to have enough energy to split a heavier atom?,other,doc2,doc2,1,0.974609375,0.97509765625
+validation,monot5_3b,491-2,q1,What specific areas should not have human intervention?,explicit,doc1,doc1,1,0.98291015625,0.9638671875
+validation,monot5_3b,491-2,q2,What specific areas might have human intervention?,other,doc2,doc2,1,0.95458984375,0.98681640625
+validation,monot5_3b,491-3,q1,What designated areas may not have human intervention?,explicit,doc1,doc1,1,0.9853515625,0.97802734375
+validation,monot5_3b,491-3,q2,What designated areas might have human intervention?,other,doc2,doc2,1,0.9453125,0.9873046875
+validation,monot5_3b,492-2,q1,"What spelling of ""espresso"" is deemed incorrect?",other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,492-2,q2,"What spelling of ""espresso"" is not deemed incorrect?",explicit,doc2,doc2,1,0.99365234375,0.9970703125
+validation,monot5_3b,492-3,q1,What word when spelled with an x is considered definitely wrong in Italian?,other,doc1,doc2,2,0.990234375,0.99072265625
+validation,monot5_3b,492-3,q2,What word when spelled with an x is not seen as definitely wrong in Italian?,explicit,doc2,doc2,1,0.984375,0.9931640625
+validation,monot5_3b,493-2,q1,What process can describe aggregation that is permanent?,other,doc1,doc1,1,0.994140625,0.9931640625
+validation,monot5_3b,493-2,q2,What process can describe aggregation that is not permanent?,explicit,doc2,doc1,2,0.98486328125,0.98486328125
+validation,monot5_3b,493-3,q1,"What is a form of nonreversible, lasting aggregation?",other,doc1,doc1,1,0.91845703125,0.6552734375
+validation,monot5_3b,493-3,q2,"What is a form of reversible, temporary aggregation?",other,doc2,doc2,1,0.91650390625,0.95166015625
+validation,monot5_3b,494-2,q1,In what short story is Portuguese a language that a stadium of people cannot comprehend?,explicit,doc1,doc2,2,0.99560546875,0.99609375
+validation,monot5_3b,494-2,q2,In what short story is Portuguese a language that more than a stadium of people cannot comprehend?,comparative,doc2,doc2,1,0.9951171875,0.99560546875
+validation,monot5_3b,494-3,q1,Which language is not known by the people in the stadium?,explicit,doc1,doc2,2,0.97705078125,0.9814453125
+validation,monot5_3b,494-3,q2,Which language is known by the people in the stadium?,other,doc2,doc2,1,0.96240234375,0.97607421875
+validation,monot5_3b,495-2,q1,"What led to the emigration of natives from Ramallah in the 1950s, and where did they primarily emigrate to?",other,doc1,doc1,1,0.9970703125,0.9970703125
+validation,monot5_3b,495-2,q2,"What caused the population of Ramallah to double by 1953, and how did the town's economy and infrastructure handle the influx of poor villagers?",other,doc2,doc1,2,0.99609375,0.99609375
+validation,monot5_3b,495-3,q1,Which nationality of people were imprisoned for being part of illegitimate political entities?,other,doc1,doc1,1,0.97314453125,0.953125
+validation,monot5_3b,495-3,q2,Which nationality of people were imprisoned for being part of legitimate political entities?,other,doc2,doc2,1,0.958984375,0.97900390625
+validation,monot5_3b,496-2,q1,How did Charlemagne try to avoid the establishment of cadet branches of the family?,other,doc1,doc2,2,0.99658203125,0.9970703125
+validation,monot5_3b,496-2,q2,How did Charlemagne try to avoid the perpetuation of cadet branches of the family?,other,doc2,doc2,1,0.99609375,0.99658203125
+validation,monot5_3b,496-3,q1,Whose resistance to his daughter's marriages may have been intended to avert the forming of cadet family branches?,other,doc1,doc1,1,0.99755859375,0.99658203125
+validation,monot5_3b,496-3,q2,Whose resistance to his daughter's marriages may have been intended to not avert the forming of cadet family branches?,explicit,doc2,doc1,2,0.99755859375,0.9970703125
+validation,monot5_3b,498-2,q1,What exact number in humans is unrecognized?,other,doc1,doc2,2,0.74609375,0.8994140625
+validation,monot5_3b,498-2,q2,What exact number in humans is recognized?,other,doc2,doc1,2,0.8095703125,0.6328125
+validation,monot5_3b,498-3,q1,What part of the nervous system has an unestablished number of instances in the human body?,other,doc1,doc1,1,0.375732421875,0.05975341796875
+validation,monot5_3b,498-3,q2,What part of the nervous system has an established number of instances in the human body?,other,doc2,doc2,1,0.08416748046875,0.125732421875
+validation,monot5_3b,499-3,q1,What type of vowel sounds are unique in Swiss German?,other,doc1,doc2,2,0.9951171875,0.99560546875
+validation,monot5_3b,499-3,q2,What type of vowel sounds are not unique in Swiss German?,explicit,doc2,doc2,1,0.994140625,0.99462890625
+validation,monot5_3b,500-2,q1,Whose invitation was overlooked for the dam's dedication ceremony?,other,doc1,doc1,1,0.99609375,0.99609375
+validation,monot5_3b,500-2,q2,Whose invitation was declined for the dam's dedication ceremony?,other,doc2,doc1,2,0.99365234375,0.9921875
+validation,monot5_3b,500-3,q1,Who was ignored in President Roosevelt's speech at the dam dedication ceremony?,other,doc1,doc1,1,0.99658203125,0.9873046875
+validation,monot5_3b,500-3,q2,Who was spoken of in President Roosevelt's speech at the dam dedication ceremony?,other,doc2,doc2,1,0.994140625,0.99609375
+validation,monot5_3b,501-2,q1,What head of Fox made three Tracy films that were unsuccessful at the box office?,other,doc1,doc1,1,0.9990234375,0.9990234375
+validation,monot5_3b,501-2,q2,What head of Fox made three Tracy films that were not unsuccessful at the box office?,explicit,doc2,doc2,1,0.99853515625,0.9990234375
+validation,monot5_3b,501-3,q1,Which actor starred in three films that did poorly at the box office?,other,doc1,doc1,1,0.99072265625,0.93310546875
+validation,monot5_3b,501-3,q2,Which actor starred in three films that did well at the box office while the program did not?,explicit,doc2,doc2,1,0.96875,0.98291015625
+validation,monot5_3b,502-3,q1,What type of headaches are rare and affect nearly three times as many men as women?,other,doc1,doc1,1,0.994140625,0.98681640625
+validation,monot5_3b,502-3,q2,What type of headaches are not rare and affect nearly three times as many men as women?,explicit,doc2,doc2,1,0.98291015625,0.98828125
+validation,monot5_3b,503-2,q1,What disc format required the GameCube to concentrate on gaming alone?,other,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,503-2,q2,What disc format did not require the GameCube to concentrate on gaming alone?,explicit,doc2,doc1,2,0.99658203125,0.99658203125
+validation,monot5_3b,503-3,q1,"Which console, dissimilar to its competitors, was not designed to play full-sized DVDs?",explicit,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,503-3,q2,"Which console, not dissimilar to its competitors, was not designed to play full-sized DVDs?",explicit,doc2,doc2,1,0.9970703125,0.99755859375
+validation,monot5_3b,504-2,q1,Which body part is not used in the dance step named by Cecil Sharp?,explicit,doc1,doc2,2,0.98779296875,0.9951171875
+validation,monot5_3b,504-2,q2,Which body part besides the hands is not used in the dance step named by Cecil Sharp?,explicit,doc2,doc2,1,0.994140625,0.99609375
+validation,monot5_3b,504-3,q1,What dance involves not using the hands?,explicit,doc1,doc1,1,0.8125,0.401611328125
+validation,monot5_3b,504-3,q2,What dance does not involve not using the hands?,explicit,doc2,doc1,2,0.70458984375,0.4248046875
+validation,monot5_3b,505-2,q1,What power is the winner of the Game Changer competition given to use the same week.,other,doc1,doc1,1,0.9970703125,0.99658203125
+validation,monot5_3b,505-2,q2,What power is the winner of the Game Changer competition given to use another week?,other,doc2,doc2,1,0.99609375,0.9970703125
+validation,monot5_3b,505-3,q1,why they not use the power at all?,explicit,doc1,doc1,1,0.943359375,0.26171875
+validation,monot5_3b,505-3,q2,why they save housemate from eviction?,other,doc2,doc2,1,0.9755859375,0.97705078125
+validation,monot5_3b,506-2,q1,Who is not described as being as kind as Moocher?,explicit,doc1,doc1,1,0.98583984375,0.98046875
+validation,monot5_3b,506-2,q2,Who is described as being as kind as Moocher?,other,doc2,doc1,2,0.9921875,0.99169921875
+validation,monot5_3b,506-3,q1,Who is not described as being as mean as Scrooge?,explicit,doc1,doc1,1,0.67822265625,0.57080078125
+validation,monot5_3b,506-3,q2,"Who is not described as being mean, besides Scrooge?",explicit,doc2,doc1,2,0.673828125,0.58642578125
+validation,monot5_3b,507-2,q1,What contractual action does Gaston try to keep from happening?,other,doc1,doc1,1,0.98974609375,0.9892578125
+validation,monot5_3b,507-2,q2,What contractual action does Gaston not try to keep from happening?,explicit,doc2,doc1,2,0.9833984375,0.982421875
+validation,monot5_3b,507-3,q1,Who is supposed to circumvent getting the contracts signed?,other,doc1,doc1,1,0.98828125,0.95849609375
+validation,monot5_3b,507-3,q2,Who is supposed to guarantee getting the contracts signed?,other,doc2,doc2,1,0.74609375,0.96875
+validation,monot5_3b,508-2,q1,Who is not prevented from serving as many terms as they would like?,explicit,doc1,doc2,2,0.389892578125,0.5478515625
+validation,monot5_3b,508-2,q2,Who is prevented from serving as many terms as they would like?,other,doc2,doc2,1,0.1856689453125,0.476318359375
+validation,monot5_3b,508-3,q1,What occupation besides council member enjoys an absence of restriction of time of occupation?,other,doc1,doc1,1,0.355712890625,0.28857421875
+validation,monot5_3b,508-3,q2,What occupation besides council member never enjoys an absence of restriction of time of occupation?,explicit,doc2,doc2,1,0.35888671875,0.37890625
+validation,monot5_3b,509-2,q1,Who departed I-94 heedlessly and went across the Bluewater Bridge?,other,doc1,doc1,1,0.994140625,0.99365234375
+validation,monot5_3b,509-2,q2,Who departed I-94 not heedlessly and went across the Bluewater Bridge?,explicit,doc2,doc1,2,0.994140625,0.99365234375
+validation,monot5_3b,509-3,q1,Who was jailed after accidentally taking an exit into Canada?,other,doc1,doc1,1,0.9970703125,0.99658203125
+validation,monot5_3b,509-3,q2,Who was jailed after knowingly taking an exit into Canada?,other,doc2,doc2,1,0.99609375,0.99658203125
+validation,monot5_3b,510-2,q1,What does governor farm?,other,doc1,doc2,2,0.94482421875,0.94677734375
+validation,monot5_3b,510-2,q2,What is the slave labor led to be?,other,doc2,doc1,2,0.06658935546875,0.06634521484375
+validation,monot5_3b,510-3,q1,Whose small indigenous workforce helped develop an independent society?,other,doc1,doc2,2,0.9931640625,0.994140625
+validation,monot5_3b,510-3,q2,Whose large indigenous workforce helped develop an independent society?,other,doc2,doc2,1,0.99072265625,0.99462890625
+validation,monot5_3b,511-2,q1,What was a major part of the Japanese program that was not focused on to cause these shows to be neither an analystical or in demand success?,explicit,doc1,doc1,1,0.99853515625,0.99755859375
+validation,monot5_3b,511-2,q2,What is a major part of the Japanese program that is not focused on to not cause these shows to be an enormous success?,explicit,doc2,doc1,2,0.99853515625,0.998046875
+validation,monot5_3b,511-3,q1,Who hosted the Japanese-inspired show that panned both critically and popularly?,other,doc1,doc1,1,0.9873046875,0.9755859375
+validation,monot5_3b,511-3,q2,Who hosted the Japanese-inspired show that succeeded both critically and popularly?,other,doc2,doc2,1,0.96923828125,0.97509765625
+validation,monot5_3b,512-2,q1,How compare  the both data bus?,other,doc1,doc1,1,0.337890625,0.32470703125
+validation,monot5_3b,512-2,q2,What is the finally data bus EQUALY TO ?,other,doc2,doc1,2,0.441650390625,0.054595947265625
+validation,monot5_3b,512-3,q1,What model number did the public hate as much as the 32008?,other,doc1,doc1,1,0.98876953125,0.97607421875
+validation,monot5_3b,512-3,q2,What model number did the public love as much as the 32008?,other,doc2,doc1,2,0.98974609375,0.986328125
+validation,monot5_3b,513-2,q1,What does not meet the standards for a complete language?,explicit,doc1,doc1,1,0.982421875,0.9677734375
+validation,monot5_3b,513-2,q2,What does meet the standards for a complete language?,other,doc2,doc2,1,0.939453125,0.978515625
+validation,monot5_3b,513-3,q1,What language system fails to satisfy the intellectual development needs of children?,other,doc1,doc1,1,0.98974609375,0.912109375
+validation,monot5_3b,513-3,q2,What language system completely satisfies the intellectual development needs of children?,other,doc2,doc2,1,0.91259765625,0.98583984375
+validation,monot5_3b,514-2,q1,What year did Faber win the Forward Poetry Prize for Human Chain though he had been previously shortlisted?,other,doc1,doc1,1,0.99853515625,0.99853515625
+validation,monot5_3b,514-2,q2,What year did Faber win the Forward Poetry Prize for Human Chain after he had never been previously shortlisted?,explicit,doc2,doc1,2,0.9990234375,0.9990234375
+validation,monot5_3b,514-3,q1,What book was Heaney's first win of the Forward Poetry Prize for Best Collection?,other,doc1,doc1,1,0.99853515625,0.99853515625
+validation,monot5_3b,514-3,q2,What book was Heaney's second win of the Forward Poetry Prize for Best Collection?,other,doc2,doc2,1,0.9970703125,0.99755859375
+validation,monot5_3b,515-2,q1,Which social group in the 19th century was illiterate?,other,doc1,doc1,1,0.99755859375,0.99609375
+validation,monot5_3b,515-2,q2,Which social group in the 19th century was literate?,other,doc2,doc2,1,0.9951171875,0.99609375
+validation,monot5_3b,515-3,q1,"What century's social group is identified by ""folklore"" as being rural and unschooled.",other,doc1,doc1,1,0.99853515625,0.998046875
+validation,monot5_3b,515-3,q2,"What century's social group is identified by ""folklore"" as being rural and not unschooled.",explicit,doc2,doc1,2,0.998046875,0.998046875
+validation,monot5_3b,516-2,q1,"What substances did ""snake oil liniment"" not contain?",explicit,doc1,doc1,1,0.99658203125,0.98876953125
+validation,monot5_3b,516-2,q2,"What substances did ""snake oil liniment"" contain?",other,doc2,doc2,1,0.9921875,0.994140625
+validation,monot5_3b,516-3,q1,"What were some of the substances that were mixed with mineral oil to create ""snake oil liniment""?",other,doc1,doc2,2,0.99169921875,0.99267578125
+validation,monot5_3b,516-3,q2,"What were not some of the substances that were mixed with mineral oil to create ""snake oil liniment""?",explicit,doc2,doc1,2,0.9931640625,0.98876953125
+validation,monot5_3b,517-2,q1,What number in al-Qaeda remains unknown?,other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,517-2,q2,What number in al-Qaeda is now known?,other,doc2,doc1,2,0.99365234375,0.99365234375
+validation,monot5_3b,517-3,q1,What number in al-Qaeda remains unrevealed?,other,doc1,doc1,1,0.9951171875,0.98095703125
+validation,monot5_3b,517-3,q2,What number in al-Qaeda was revealed?,other,doc2,doc2,1,0.9931640625,0.99462890625
+validation,monot5_3b,518-2,q1,Which novel was published with Sloane's unauthorized changes?,other,doc1,doc1,1,0.9951171875,0.99365234375
+validation,monot5_3b,518-2,q2,Which novel was published with Sloane's authorized changes?,other,doc2,doc1,2,0.9931640625,0.9921875
+validation,monot5_3b,518-3,q1,Who made changes with the author's authorization?,other,doc1,doc2,2,0.69287109375,0.95703125
+validation,monot5_3b,518-3,q2,Who made changes without the writer's authorization?,implicit,doc2,doc1,2,0.8271484375,0.419189453125
+validation,monot5_3b,519-2,q1,Which court ruling decided that that segregated public schools were not constitutional?,explicit,doc1,doc1,1,0.9462890625,0.9140625
+validation,monot5_3b,519-2,q2,Which court ruling decided that that segregated public schools were constitutional?,other,doc2,doc1,2,0.927734375,0.91845703125
+validation,monot5_3b,519-3,q1,"What was the significance of the US Supreme Court's ruling in ""Brown v. Board of Education"" for African Americans seeking equality in public schools?",other,doc1,doc1,1,0.8564453125,0.84814453125
+validation,monot5_3b,519-3,q2,"What was the US Supreme Court's ruling in ""Brown v. Board of Education"" in 1954 regarding segregated public schools?",other,doc2,doc1,2,0.80029296875,0.7861328125
+validation,monot5_3b,521-2,q1,What CIA analyst tries to prevent Gerasimov's ascension to power?,other,doc1,doc1,1,0.99853515625,0.99853515625
+validation,monot5_3b,521-2,q2,What CIA analyst does not try to prevent Gerasimov's ascension to power?,explicit,doc2,doc1,2,0.99755859375,0.99755859375
+validation,monot5_3b,521-3,q1,Who tries to prohibit Gerasimov's ascension to power?,other,doc1,doc1,1,0.9970703125,0.99560546875
+validation,monot5_3b,521-3,q2,Who tries to aid Gerasimov's ascension to power?,other,doc2,doc2,1,0.9951171875,0.99609375
+validation,monot5_3b,522-2,q1,What type of demons would prevent undeserving souls from entering the realm of the just?,other,doc1,doc2,2,0.98046875,0.98876953125
+validation,monot5_3b,522-2,q2,What type of demons would prevent deserving souls from entering the realm of the evil?,other,doc2,doc2,1,0.98486328125,0.99169921875
+validation,monot5_3b,522-3,q1,What hall would unrighteous souls be barred from passage into?,other,doc1,doc1,1,0.7587890625,0.70947265625
+validation,monot5_3b,522-3,q2,What hall would righteous souls be barred from passage out of?,other,doc2,doc2,1,0.6669921875,0.8095703125
+validation,monot5_3b,523-2,q1,Which organization cited that Millsap's story was not able to be backed up by someone?,explicit,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,523-2,q2,Which organization cited that Millsap's story was able to be corroborated by someone?,other,doc2,doc2,1,0.99755859375,0.998046875
+validation,monot5_3b,523-3,q1,What team's then General Manager was pronounced having made comments that were corroborated?,other,doc1,doc1,1,0.9970703125,0.9970703125
+validation,monot5_3b,523-3,q2,What team's then General Manager was pronounced having made comments that were not uncorroborated?,explicit,doc2,doc2,1,0.99560546875,0.99609375
+validation,monot5_3b,524-2,q1,What form of literature are of uncertain date?,other,doc1,doc1,1,0.98828125,0.97216796875
+validation,monot5_3b,524-2,q2,What form of literature are not of uncertain date?,explicit,doc2,doc1,2,0.9033203125,0.8046875
+validation,monot5_3b,524-3,q1,"How were the plays, whose publication dates were a mystery, organized?",other,doc1,doc1,1,0.9921875,0.97607421875
+validation,monot5_3b,524-3,q2,"How were the plays, whose publication dates were not a mystery, organized?",explicit,doc2,doc1,2,0.982421875,0.9765625
+validation,monot5_3b,525-2,q1,Who remarked that nobody was hurt in his film?,other,doc1,doc2,2,0.9833984375,0.98583984375
+validation,monot5_3b,525-2,q2,Who did not remark that nobody was hurt in his film?,explicit,doc2,doc2,1,0.95751953125,0.96826171875
+validation,monot5_3b,525-3,q1,Who remarked that he'd made a film in which no person was shot?,explicit,doc1,doc1,1,0.98583984375,0.9599609375
+validation,monot5_3b,525-3,q2,Who remarked that he'd made a film in which many people were shot?,other,doc2,doc2,1,0.955078125,0.986328125
+validation,monot5_3b,526-2,q1,Who was criticized by Lenin and Trotsky and was not defended by anyone?,explicit,doc1,doc1,1,0.9873046875,0.9833984375
+validation,monot5_3b,526-2,q2,Who was criticized by Lenin and Trotsky and was not attacked by anyone?,explicit,doc2,doc1,2,0.9736328125,0.97314453125
+validation,monot5_3b,526-3,q1,Who joined Trotsky in speaking on Stalin's behalf at a conference where there wad an absence of others doing the same?,other,doc1,doc1,1,0.99609375,0.9951171875
+validation,monot5_3b,526-3,q2,Who joined Trotsky in speaking on Stalin's behalf at a conference where there was not an absence of others doing the same?,explicit,doc2,doc1,2,0.99560546875,0.99560546875
+validation,monot5_3b,528-3,q1,What precautionary measure do the carriage roads undergo?,other,doc1,doc1,1,0.9912109375,0.98583984375
+validation,monot5_3b,528-3,q2,What is closed in March after being from summer to winter otherwise?,other,doc2,doc2,1,0.85546875,0.892578125
+validation,monot5_3b,530-2,q1,Which number MT yield allowed for unexpected exposure to fallout?,other,doc1,doc1,1,0.99658203125,0.99365234375
+validation,monot5_3b,530-2,q2,Which number MT yield refrained from allowing for unexpected exposure to fallout?,other,doc2,doc2,1,0.994140625,0.99560546875
+validation,monot5_3b,530-3,q1,What number MT yield led to surprising vulnerability to fallout?,other,doc1,doc1,1,0.99560546875,0.98876953125
+validation,monot5_3b,530-3,q2,What number MT yield led to not surprising vulnerability to fallout?,explicit,doc2,doc1,2,0.9951171875,0.986328125
+validation,monot5_3b,531-2,q1,What person's shrine finished in 477/478 CE has an antechamber with group of Six Buddas that are incomplete?,other,doc1,doc1,1,0.99658203125,0.99658203125
+validation,monot5_3b,531-2,q2,What person's shrine finished in 477/478 CE has an antechamber with group of Six Buddas that are not incomplete?,explicit,doc2,doc1,2,0.99560546875,0.99560546875
+validation,monot5_3b,531-3,q1,Who didn't complete sculptural groups?,explicit,doc1,doc1,1,0.96630859375,0.8427734375
+validation,monot5_3b,531-3,q2,Who did complete sculptural groups?,other,doc2,doc2,1,0.92138671875,0.9521484375
+validation,monot5_3b,532-2,q1,Which album was different from the previous albums?,other,doc1,doc1,1,0.97314453125,0.9560546875
+validation,monot5_3b,532-2,q2,Which album wasn't different from the previous albums?,explicit,doc2,doc2,1,0.90576171875,0.9482421875
+validation,monot5_3b,532-3,q1,Which album was distinct from the other two albums that preceded it?,other,doc1,doc1,1,0.98779296875,0.97998046875
+validation,monot5_3b,532-3,q2,Which album was similar to the other two albums that preceded it?,other,doc2,doc2,1,0.9794921875,0.9892578125
+validation,monot5_3b,533-2,q1,Who lived in their own dwelling and were coupled rarely?,other,doc1,doc2,2,0.92236328125,0.96728515625
+validation,monot5_3b,533-2,q2,Who lived in their own dwelling and were coupled not rarely?,explicit,doc2,doc1,2,0.9736328125,0.962890625
+validation,monot5_3b,533-3,q1,Who lived apart in their own dwellings and commonly married?,other,doc1,doc1,1,0.98193359375,0.96337890625
+validation,monot5_3b,533-3,q2,Who lived apart in their own dwellings and never married?,explicit,doc2,doc2,1,0.94482421875,0.98681640625
+validation,monot5_3b,534-2,q1,"Which party did ""The Sun"" endorse in Scotland? ",other,doc1,doc1,1,0.9970703125,0.99609375
+validation,monot5_3b,534-2,q2,"Which party did ""The Sun"" not endorse in Scotland? ",explicit,doc2,doc2,1,0.9931640625,0.99658203125
+validation,monot5_3b,534-3,q1,Which party's flagship policy of independence wasn't endorsed by the paper in 1997?,explicit,doc1,doc1,1,0.99609375,0.9912109375
+validation,monot5_3b,534-3,q2,Which party's flagship policy of independence was endorsed by the paper in 1997?,other,doc2,doc1,2,0.9951171875,0.9951171875
+validation,monot5_3b,535-2,q1,What writer appears to have been the first to introduce the concept that elves are immortal?,other,doc1,doc1,1,0.99658203125,0.9951171875
+validation,monot5_3b,535-2,q2,What writer appears to have been the first to introduce the concept that elves are not immortal?,explicit,doc2,doc2,1,0.9931640625,0.99609375
+validation,monot5_3b,535-3,q1,What writer appears to be the first to introduce elves as a species that is everlasting?,other,doc1,doc1,1,0.9951171875,0.98681640625
+validation,monot5_3b,535-3,q2,What writer appears to be the first to introduce elves as a species that is not everlasting?,explicit,doc2,doc2,1,0.98828125,0.99462890625
+validation,monot5_3b,536-2,q1,What occurrences that are rare cause enough loss of life and property damage to be considered a major hazard?,other,doc1,doc1,1,0.76513671875,0.414306640625
+validation,monot5_3b,536-2,q2,What occurrences that are not rare cause enough loss of life and property damage to be considered a major hazard?,explicit,doc2,doc1,2,0.6201171875,0.406005859375
+validation,monot5_3b,536-3,q1,What hazards in the Caribbean that are rare cause considerable loss of life and property damage?,other,doc1,doc1,1,0.99609375,0.99365234375
+validation,monot5_3b,536-3,q2,What hazards in the Caribbean that are not rare cause considerable loss of life and property damage?,explicit,doc2,doc1,2,0.9951171875,0.9951171875
+validation,monot5_3b,537-2,q1,What star known as the south pole star is barely visible on a clear night?,other,doc1,doc1,1,0.998046875,0.998046875
+validation,monot5_3b,537-2,q2,What star known as the south pole star is not barely visible on a clear night?,explicit,doc2,doc1,2,0.9970703125,0.99609375
+validation,monot5_3b,537-3,q1,Which star is just slightly visible on a clear night?,other,doc1,doc1,1,0.9814453125,0.87548828125
+validation,monot5_3b,537-3,q2,Which star is visible on a clear night?,other,doc2,doc2,1,0.892578125,0.93505859375
+validation,monot5_3b,538-2,q1,Which stanza tells Odin that Sigyn sitting sadly with Loki?,other,doc1,doc1,1,0.99853515625,0.99853515625
+validation,monot5_3b,538-2,q2,Which stanza tells Odin that Sigyn sitting sadly with untruthful Loki?,other,doc2,doc1,2,0.998046875,0.998046875
+validation,monot5_3b,538-3,q1,"Who is sitting sadly with Loki under a ""grove of hot springs""?",other,doc1,doc1,1,0.99755859375,0.99609375
+validation,monot5_3b,538-3,q2,"Who is sitting happily with Loki under a ""grove of hot springs""?",other,doc2,doc1,2,0.998046875,0.99755859375
+validation,monot5_3b,539-2,q1,What raid of 1942 was foiled?,other,doc1,doc1,1,0.71044921875,0.6845703125
+validation,monot5_3b,539-2,q2,What raid of 1942 was not foiled?,explicit,doc2,doc1,2,0.77978515625,0.56591796875
+validation,monot5_3b,539-3,q1,When was failed Dieppe raid happened?,other,doc1,doc1,1,0.9580078125,0.865234375
+validation,monot5_3b,539-3,q2,When was Dieppe raid happened?,other,doc2,doc2,1,0.5361328125,0.5439453125
+validation,monot5_3b,540-2,q1,What can individuals contain genetically? ,other,doc1,doc1,1,0.68017578125,0.5166015625
+validation,monot5_3b,540-2,q2,What can nonsexual individuals contain genetically? ,other,doc2,doc1,2,0.293701171875,0.27783203125
+validation,monot5_3b,540-3,q1,Who have been epicene for many million of years?,other,doc1,doc1,1,0.0035381317138671875,0.0021648406982421875
+validation,monot5_3b,540-3,q2,Who have been procreating intimately for many million of years?,other,doc2,doc2,1,0.1981201171875,0.79541015625
+validation,monot5_3b,541-2,q1,What is seducing a virgin or seeking pleasure from an unmarried woman considered an invasion of in regards to a father?,other,doc1,doc1,1,0.99365234375,0.9921875
+validation,monot5_3b,541-2,q2,What is seducing a virgin or seeking pleasure from a woman in wedlock not considered an invasion of in regards to a father?,explicit,doc2,doc2,1,0.98046875,0.98486328125
+validation,monot5_3b,541-3,q1,Whose property is violated when someone seeks pleasure from a married woman?,other,doc1,doc2,2,0.95654296875,0.98681640625
+validation,monot5_3b,541-3,q2,Whose property is violated when someone seeks pleasure from a wed woman?,other,doc2,doc2,1,0.9541015625,0.98388671875
+validation,monot5_3b,542-2,q1,Which two major cabinet positions were not very rarely filled by peers?,explicit,doc1,doc1,1,0.994140625,0.9873046875
+validation,monot5_3b,542-2,q2,Which major cabinet position was very rarely filled by peers?,other,doc2,doc1,2,0.99755859375,0.99755859375
+validation,monot5_3b,542-3,q1,Which position along with Leader of the House of Lords is commonly filled by peers?,other,doc1,doc2,2,0.9833984375,0.98779296875
+validation,monot5_3b,542-3,q2,Which position along with Leader of the House of Lords is rarely filled by peers?,other,doc2,doc2,1,0.9931640625,0.99462890625
+validation,monot5_3b,543-2,q1,Who died of unstated causes in London at the beginning of 1811?,other,doc1,doc1,1,0.97216796875,0.95849609375
+validation,monot5_3b,543-2,q2,Who died of a sickness in London at the beginning of 1811?,other,doc2,doc2,1,0.96630859375,0.98974609375
+validation,monot5_3b,543-3,q1,Who could not testify at Johnston's court martial?,explicit,doc1,doc1,1,0.99658203125,0.9638671875
+validation,monot5_3b,543-3,q2,Who could testify at Johnston's court martial?,other,doc2,doc1,2,0.99169921875,0.98681640625
+validation,monot5_3b,544-2,q1,"What did the indentured servitude prompt, while avoiding large rebel armies?",other,doc1,doc2,2,0.978515625,0.984375
+validation,monot5_3b,544-2,q2,"What did the indentured servitude not prompt, in addition to large rebel armies?",explicit,doc2,doc2,1,0.9853515625,0.9931640625
+validation,monot5_3b,544-3,q1,What practice didn't lead to the formation of large rebel armies?,explicit,doc1,doc1,1,0.99609375,0.98974609375
+validation,monot5_3b,544-3,q2,What practice led to the formation of large rebel armies?,other,doc2,doc2,1,0.9951171875,0.99755859375
+validation,monot5_3b,545-2,q1,Who all hated Hitler in Sagan's household?,other,doc1,doc2,2,0.99267578125,0.9970703125
+validation,monot5_3b,545-2,q2,Who didn't hate Hitler in Sagan's household?,explicit,doc2,doc2,1,0.9970703125,0.99853515625
+validation,monot5_3b,545-3,q1,Who was not famous in World War II?,explicit,doc1,doc2,2,0.74658203125,0.9150390625
+validation,monot5_3b,545-3,q2,Who was famous in World War II?,other,doc2,doc2,1,0.09173583984375,0.8251953125
+validation,monot5_3b,546-2,q1,What was overdubbed in the absence of Beatles' section?,other,doc1,doc1,1,0.99853515625,0.99755859375
+validation,monot5_3b,546-2,q2,What was overdubbed in the presence of Beatles' section?,other,doc2,doc1,2,0.9970703125,0.9970703125
+validation,monot5_3b,546-3,q1,Whose Bach-inspired piano solo was overdubbed without the Beatles?,implicit,doc1,doc1,1,0.998046875,0.99609375
+validation,monot5_3b,546-3,q2,Whose Bach-inspired piano solo was overdubbed with the Beatles there?,other,doc2,doc1,2,0.99755859375,0.99755859375
+validation,monot5_3b,547-2,q1,"What ""Annual Register"" cofounder's contribution to the publication is ambiguous?",other,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,547-2,q2,"What ""Annual Register"" cofounder's contribution to the publication is  not ambiguous?",explicit,doc2,doc1,2,0.9951171875,0.9951171875
+validation,monot5_3b,547-3,q1,Whose contribution to an influential publication is uncertain?,other,doc1,doc1,1,0.998046875,0.990234375
+validation,monot5_3b,547-3,q2,Whose contribution to an influential publication is not uncertain?,explicit,doc2,doc1,2,0.99267578125,0.99072265625
+validation,monot5_3b,548-2,q1,Which film received unfavorable reviews?,other,doc1,doc1,1,0.921875,0.72802734375
+validation,monot5_3b,548-2,q2,Which film received favorable reviews?,other,doc2,doc1,2,0.75,0.6376953125
+validation,monot5_3b,548-3,q1,Whose film received bad reviews?,other,doc1,doc1,1,0.83837890625,0.7607421875
+validation,monot5_3b,548-3,q2,Whose film received good reviews?,other,doc2,doc2,1,0.66650390625,0.72705078125
+validation,monot5_3b,549-2,q1,What do kittens and puppies like that a human baby does not?,explicit,doc1,doc2,2,0.83349609375,0.9560546875
+validation,monot5_3b,549-2,q2,What do kittens and human babies like that a puppy does not?,explicit,doc2,doc2,1,0.87939453125,0.9755859375
+validation,monot5_3b,549-3,q1,Why rolling object doesn't appeals it?,explicit,doc1,doc2,2,0.96826171875,0.98974609375
+validation,monot5_3b,549-3,q2,Why rolling object is  appeals it?,other,doc2,doc2,1,0.990234375,0.99169921875
+validation,monot5_3b,550-2,q1,What is called “Grade Primary” in only one location?,other,doc1,doc1,1,0.97900390625,0.97802734375
+validation,monot5_3b,550-2,q2,What is called “Grade Primary” in two locations?,other,doc2,doc2,1,0.9833984375,0.986328125
+validation,monot5_3b,550-3,q1,Who did not join kindergarten?,explicit,doc1,doc1,1,0.0015010833740234375,0.0010004043579101562
+validation,monot5_3b,550-3,q2,Who did  join kindergarten?,other,doc2,doc1,2,0.0014553070068359375,0.0012941360473632812
+validation,monot5_3b,551-2,q1,Where did the incomplete characters' stories that were set in the east and north go?,other,doc1,doc1,1,0.99658203125,0.99609375
+validation,monot5_3b,551-2,q2,Where did the complete characters' stories that were set in the east and north go?,other,doc2,doc2,1,0.99658203125,0.9970703125
+validation,monot5_3b,551-3,q1,"What state were the characters stories in when Martin moved to the next book, ""A Dance with Dragon""?",other,doc1,doc2,2,0.99462890625,0.9951171875
+validation,monot5_3b,551-3,q2,What book did Martin move the completed characters stories to?,other,doc2,doc2,1,0.99658203125,0.998046875
+validation,monot5_3b,552-2,q1,Who worked with Gall until the two of them stopped talking for reasons that are still mysterious?,other,doc1,doc1,1,0.99853515625,0.99853515625
+validation,monot5_3b,552-2,q2,Who worked with Gall until they stopped talking for reasons no longer mysterious?,explicit,doc2,doc1,2,0.99853515625,0.99853515625
+validation,monot5_3b,552-3,q1,Who was Gall's anatomist until causes that are mysterious even today occurred?,other,doc1,doc1,1,0.998046875,0.99755859375
+validation,monot5_3b,552-3,q2,Who was Gall's anatomist until causes known even in 1813 occurred?,other,doc2,doc1,2,0.99853515625,0.998046875
+validation,monot5_3b,553-2,q1,What city served as the port of Edinburgh as agreed to as of an unspecified time until the charter of 1329?,other,doc1,doc1,1,0.99609375,0.99462890625
+validation,monot5_3b,553-2,q2,What city served anonymously as the port of Edinburgh as agreed to until the charter of 1329?,other,doc2,doc2,1,0.99462890625,0.9951171875
+validation,monot5_3b,553-3,q1,For what Edinburgh port is Robert the Bruce's confirmation date undiscovered?,other,doc1,doc1,1,0.99658203125,0.98974609375
+validation,monot5_3b,553-3,q2,For what Edinburgh port is Robert the Bruce's confirmation date not undiscovered?,explicit,doc2,doc1,2,0.99560546875,0.994140625
+validation,monot5_3b,554-2,q1,What was not excluded from being torn down in 1820?,explicit,doc1,doc2,2,0.9765625,0.9814453125
+validation,monot5_3b,554-2,q2,What type of towers were torn down in 1820?,other,doc2,doc2,1,0.9541015625,0.97802734375
+validation,monot5_3b,554-3,q1,"Which structures, unlike the city wall, were torn down in 1820?",other,doc1,doc1,1,0.9755859375,0.96240234375
+validation,monot5_3b,554-3,q2,Which structures along with the city wall were torn down in 1820?,other,doc2,doc1,2,0.984375,0.98291015625
+validation,monot5_3b,555-2,q1,Who felt lots of pain?,other,doc1,doc2,2,0.0005974769592285156,0.00679779052734375
+validation,monot5_3b,555-2,q2,Who felt no pain?,explicit,doc2,doc2,1,0.00025916099548339844,0.6318359375
+validation,monot5_3b,555-3,q1,Who didn't seal the X-1's hatch by himself?,explicit,doc1,doc1,1,0.9970703125,0.99072265625
+validation,monot5_3b,555-3,q2,Who successfully sealed the X-1's hatch alone?,other,doc2,doc2,1,0.98486328125,0.9921875
+validation,monot5_3b,556-2,q1,Who was it that detested the King's rule?,other,doc1,doc1,1,0.6923828125,0.544921875
+validation,monot5_3b,556-2,q2,Who was it that didn't detest the King's rule?,explicit,doc2,doc2,1,0.58740234375,0.919921875
+validation,monot5_3b,556-3,q1,Which earl decried Edward's rule?,other,doc1,doc1,1,0.9541015625,0.83837890625
+validation,monot5_3b,556-3,q2,Which earl did not decry Edward's rule?,explicit,doc2,doc2,1,0.88916015625,0.9140625
+validation,monot5_3b,557-2,q1,Who did not participate in the Permanent Court of International Justice (World Court)?,explicit,doc1,doc1,1,0.98046875,0.66455078125
+validation,monot5_3b,557-2,q2,Who participated in the Permanent Court of International Justice (World Court)?,other,doc2,doc2,1,0.71435546875,0.76220703125
+validation,monot5_3b,557-3,q1,What governing body did not take action?,explicit,doc1,doc1,1,0.29345703125,0.005428314208984375
+validation,monot5_3b,557-3,q2,What governing body did take action?,other,doc2,doc1,2,0.0038852691650390625,0.0015010833740234375
+validation,monot5_3b,558-2,q1,What article of clothing would have been sufficient for the protagonist to take off to keep his bar?,other,doc1,doc1,1,0.9873046875,0.984375
+validation,monot5_3b,558-2,q2,What article of clothing would not have been sufficient for the protagonist to take off to keep his bar?,explicit,doc2,doc1,2,0.990234375,0.98388671875
+validation,monot5_3b,558-3,q1,What does a character refuse to do in a game of strip poker?,other,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,558-3,q2,What does a character's adversay refuse to do in a game of strip poker?,other,doc2,doc1,2,0.994140625,0.99365234375
+validation,monot5_3b,559-2,q1,Who enforce physical fitness?,other,doc1,doc2,2,0.6240234375,0.771484375
+validation,monot5_3b,559-2,q2,Who do not conduct tests of physical fitness?,explicit,doc2,doc2,1,0.010986328125,0.0885009765625
+validation,monot5_3b,559-3,q1,Who abstains from demanding push ups or crunches?,other,doc1,doc1,1,0.9873046875,0.265869140625
+validation,monot5_3b,559-3,q2,Who does not abstain from demanding push ups or crunches?,explicit,doc2,doc1,2,0.96240234375,0.2421875
+validation,monot5_3b,560-2,q1,What hyphenated word was applied to those with unusual spiritual beliefs?,other,doc1,doc1,1,0.80029296875,0.23095703125
+validation,monot5_3b,560-2,q2,What hyphenated word was not applied to those with unusual spiritual beliefs?,explicit,doc2,doc1,2,0.74951171875,0.2476806640625
+validation,monot5_3b,560-3,q1,What hyphenated word was applied to those whose religious or political views were unusual?,other,doc1,doc1,1,0.98779296875,0.931640625
+validation,monot5_3b,560-3,q2,What hyphenated word was applied to those whose religious or political views were not unusual?,explicit,doc2,doc1,2,0.953125,0.94677734375
+validation,monot5_3b,561-2,q1,What fish food are home aquaria unable to supply?,other,doc1,doc1,1,0.99658203125,0.99658203125
+validation,monot5_3b,561-2,q2,What fish food are home aquaria  not unable to supply?,explicit,doc2,doc1,2,0.99365234375,0.99365234375
+validation,monot5_3b,561-3,q1,What food are many home aquaria incapable of supplying naturally?,other,doc1,doc1,1,0.9970703125,0.99072265625
+validation,monot5_3b,561-3,q2,What food are many home aquaria seldom incapable of supplying naturally?,other,doc2,doc1,2,0.99560546875,0.99169921875
+validation,monot5_3b,562-2,q1,What is unclear in the therapy for recurrent nightmares?,other,doc1,doc1,1,0.998046875,0.99755859375
+validation,monot5_3b,562-2,q2,What is clear in the therapy for recurrent nightmares?,other,doc2,doc1,2,0.99658203125,0.99560546875
+validation,monot5_3b,562-3,q1,"What can be induced to alleviate recurrent nightmares, an alleviation which is ambiguous?",other,doc1,doc1,1,0.99755859375,0.9970703125
+validation,monot5_3b,562-3,q2,"What can be induced to alleviate recurrent nightmares, an alleviation which is not ambiguous?",explicit,doc2,doc1,2,0.9970703125,0.9970703125
+validation,monot5_3b,563-2,q1,What region of France had had no uncontested and peaceful successions?,explicit,doc1,doc1,1,0.98779296875,0.986328125
+validation,monot5_3b,563-2,q2,"What region of France had had no uncontested, yet peaceful, successions?",explicit,doc2,doc2,1,0.9892578125,0.990234375
+validation,monot5_3b,563-3,q1,What transition usually required bloodshed?,other,doc1,doc1,1,0.00490570068359375,0.0041656494140625
+validation,monot5_3b,563-3,q2,What transition usually did not require bloodshed?,explicit,doc2,doc2,1,0.035675048828125,0.09857177734375
+validation,monot5_3b,564-2,q1,How long did Richard Francis Burton spend on his groundbreaking trip to Great Salt Lake City?,other,doc1,doc2,2,0.9970703125,0.99755859375
+validation,monot5_3b,564-2,q2,How long did Richard Francis Burton spend on his run of the mill trip to Great Salt Lake City?,other,doc2,doc2,1,0.99755859375,0.998046875
+validation,monot5_3b,564-3,q1,Who was given uncommon admittance during his three-week visit?,other,doc1,doc1,1,0.9970703125,0.9892578125
+validation,monot5_3b,564-3,q2,Who was given typical admittance during his three-week visit?,other,doc2,doc1,2,0.994140625,0.9912109375
+validation,monot5_3b,565-2,q1,Who has refrained from appearing on stage performing music since the 2005 Abba reunion?,other,doc1,doc1,1,0.99755859375,0.99755859375
+validation,monot5_3b,565-2,q2,Who has not refrained from appearing on stage performing music since the 2005 Abba reunion?,explicit,doc2,doc1,2,0.99755859375,0.99755859375
+validation,monot5_3b,565-3,q1,Who had refrained from appearing on stage since ABBA?,other,doc1,doc1,1,0.99658203125,0.99267578125
+validation,monot5_3b,565-3,q2,Who had not refrained from appearing on stage since ABBA?,explicit,doc2,doc1,2,0.9970703125,0.99462890625
+validation,monot5_3b,566-2,q1,What happened in the Najibullah  Government?,other,doc1,doc1,1,0.98974609375,0.98974609375
+validation,monot5_3b,566-2,q2,what are the Effects of Russian government ending?,other,doc2,doc1,2,0.9970703125,0.9970703125
+validation,monot5_3b,566-3,q1,What happens to the fuel last time?,other,doc1,doc1,1,0.00530242919921875,0.004299163818359375
+validation,monot5_3b,566-3,q2,What happens to them?,other,doc2,doc1,2,0.0010728836059570312,0.0008168220520019531
+validation,monot5_3b,567-2,q1,Which nationality of soldiers is it unknown how many of fell in Vaksdal?,other,doc1,doc1,1,0.998046875,0.998046875
+validation,monot5_3b,567-2,q2,Which nationality of soldiers is it now known how many of fell in Vaksdal?,other,doc2,doc1,2,0.9970703125,0.9970703125
+validation,monot5_3b,567-3,q1,What non-Norwegian nationality of fighters lost an undetermined amount of men at Vaksdal?,other,doc1,doc1,1,0.99462890625,0.97998046875
+validation,monot5_3b,567-3,q2,What non-Norwegian  nationality of soldiers lost a known amount of fighters at Vaksdal?,other,doc2,doc1,2,0.99462890625,0.98828125

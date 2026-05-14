@@ -9,7 +9,7 @@ from random_baseline import make_random_predictions
 from tfidf_baseline import make_tfidf_predictions
 
 
-MODEL_NAMES = ["random", "bm25", "tfidf", "sbert"]
+MODEL_NAMES = ["random", "bm25", "tfidf", "sbert", "monot5_3b"]
 RESULTS_FOLDER = Path("results")
 
 
@@ -21,7 +21,7 @@ def get_result_paths(split_name):
     }
 
 
-def get_prediction_rows(model_name, split_name):
+def get_prediction_rows(model_name, split_name, monot5_batch_size):
     if model_name == "random":
         return make_random_predictions(split_name)
 
@@ -34,6 +34,14 @@ def get_prediction_rows(model_name, split_name):
     if model_name == "sbert":
         from sbert_baseline import make_sbert_predictions
         return make_sbert_predictions(split_name)
+
+    if model_name == "monot5_3b":
+        from cross_encoder_baseline import make_cross_encoder_predictions
+        return make_cross_encoder_predictions(
+            split_name,
+            model_name="monot5_3b",
+            batch_size=monot5_batch_size,
+        )
 
     raise ValueError(f"Unknown model: {model_name}")
 
@@ -80,12 +88,16 @@ def print_negation_type_table(split_name, results):
             )
 
 
-def run_evaluation(split_name, model_name):
+def run_evaluation(split_name, model_name, monot5_batch_size):
     models_to_run = get_models_to_run(model_name)
     results = []
 
     for current_model_name in models_to_run:
-        prediction_rows = get_prediction_rows(current_model_name, split_name)
+        prediction_rows = get_prediction_rows(
+            current_model_name,
+            split_name,
+            monot5_batch_size,
+        )
         metrics = calculate_all_metrics(prediction_rows)
         per_type_metrics = calculate_per_type_metrics(prediction_rows)
 
@@ -183,10 +195,15 @@ def save_results(split_name, results):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--split", choices=["validation", "test"], default="validation")
-    parser.add_argument("--model", choices=["random", "bm25", "tfidf", "sbert", "all"], default="all")
+    parser.add_argument(
+        "--model",
+        choices=["random", "bm25", "tfidf", "sbert", "monot5_3b", "all"],
+        default="all",
+    )
+    parser.add_argument("--monot5-batch-size", type=int, default=1)
     args = parser.parse_args()
 
-    results = run_evaluation(args.split, args.model)
+    results = run_evaluation(args.split, args.model, args.monot5_batch_size)
 
     print(f"split: {args.split}")
     print_metrics_table(results)

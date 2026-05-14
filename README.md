@@ -14,7 +14,7 @@ The paired queries often differ by negation or a meaning reversal, such as `not`
 ## What This Repo Includes
 
 - NevIR train, validation, and test CSV files
-- Random, BM25, TF-IDF, and Sentence-BERT retrieval baselines
+- Random, BM25, TF-IDF, Sentence-BERT, and MonoT5 retrieval baselines
 - Query-level accuracy, pairwise accuracy, and MRR evaluation
 - Rule-based negation type labels: `explicit`, `implicit`, `comparative`, and `other`
 - Final result tables, plots, and selected error examples
@@ -28,9 +28,12 @@ random
 bm25
 tfidf
 sbert
+monot5_3b
 ```
 
 `sbert` uses Sentence-BERT with `sentence-transformers/all-MiniLM-L6-v2`.
+
+`monot5_3b` uses the MonoT5 3B cross-encoder model `castorini/monot5-3b-msmarco-10k`.
 
 ## Dataset
 
@@ -78,13 +81,13 @@ Install the standard dependencies:
 python -m pip install -r config/requirements.txt
 ```
 
-To run `sbert` or `all`, install the dense retrieval dependency too:
+To run `sbert`, `monot5_3b`, or `all`, install the dense retrieval dependencies too:
 
 ```bash
 python -m pip install -r config/requirements-dense.txt
 ```
 
-Sentence-BERT downloads its model from Hugging Face the first time it runs. If you do not want that download, run only `random`, `bm25`, or `tfidf`.
+Sentence-BERT and MonoT5 download their models from Hugging Face the first time they run. MonoT5 3B is a large model, so GPU runtime is recommended. If you do not want these downloads, run only `random`, `bm25`, or `tfidf`.
 
 ## Run Evaluation
 
@@ -115,7 +118,7 @@ validation, test
 Supported models:
 
 ```text
-random, bm25, tfidf, sbert, all
+random, bm25, tfidf, sbert, monot5_3b, all
 ```
 
 ## Build Report Files
@@ -138,6 +141,7 @@ random  0.509       0.249          0.754   450
 bm25    0.491       0.022          0.746   450
 tfidf   0.502       0.062          0.751   450
 sbert   0.522       0.084          0.761   450
+monot5  0.691       0.422          0.846   450
 ```
 
 ### Test
@@ -148,9 +152,10 @@ random  0.492       0.244          0.746   2766
 bm25    0.484       0.018          0.742   2766
 tfidf   0.484       0.043          0.742   2766
 sbert   0.523       0.071          0.762   2766
+monot5  0.722       0.477          0.861   2766
 ```
 
-Sentence-BERT gives the best query accuracy and MRR on both validation and test. Pairwise accuracy stays low across the learned and lexical baselines, showing that paired negation queries need more careful retrieval methods than basic similarity alone.
+MonoT5 3B gives the strongest results, reaching 47.7% pairwise accuracy on the test split. The contrast between Sentence-BERT and MonoT5 shows why cross-encoders are much better suited to paired negation ranking than basic similarity models.
 
 ## Metrics
 
@@ -218,7 +223,7 @@ Test:
 ```text
 config/
   requirements.txt           Standard dependencies
-  requirements-dense.txt     Sentence-BERT dependency
+  requirements-dense.txt     Sentence-BERT and MonoT5 dependencies
 
 data/
   train.csv
@@ -239,6 +244,7 @@ src/
   bm25_baseline.py           BM25 baseline
   tfidf_baseline.py          TF-IDF baseline
   sbert_baseline.py          Sentence-BERT baseline
+  cross_encoder_baseline.py  MonoT5/cross-encoder baseline
   evaluate.py                Main evaluation runner
   report.py                  Build final tables, plots, and error examples
 ```

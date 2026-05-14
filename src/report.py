@@ -8,7 +8,7 @@ import numpy as np
 
 RESULTS_FOLDER = Path("results")
 PLOTS_FOLDER = RESULTS_FOLDER / "plots"
-PLOT_COLORS = ["steelblue", "coral", "forestgreen", "mediumpurple"]
+PLOT_COLORS = ["steelblue", "coral", "forestgreen", "mediumpurple", "goldenrod"]
 
 
 def _read_csv(file_path):
@@ -27,21 +27,27 @@ def _write_csv(file_path, rows):
 
 def load_all_model_metrics():
     rows = []
-    for path in sorted(RESULTS_FOLDER.glob("*_model_metrics.csv")):
+    for path in [RESULTS_FOLDER / "validation_model_metrics.csv", RESULTS_FOLDER / "test_model_metrics.csv"]:
+        if not path.exists():
+            continue
         rows.extend(_read_csv(path))
     return rows
 
 
 def load_all_per_type_metrics():
     rows = []
-    for path in sorted(RESULTS_FOLDER.glob("*_negation_type_metrics.csv")):
+    for path in [RESULTS_FOLDER / "validation_negation_type_metrics.csv", RESULTS_FOLDER / "test_negation_type_metrics.csv"]:
+        if not path.exists():
+            continue
         rows.extend(_read_csv(path))
     return rows
 
 
 def load_all_predictions():
     rows = []
-    for path in sorted(RESULTS_FOLDER.glob("*_predictions.csv")):
+    for path in [RESULTS_FOLDER / "validation_predictions.csv", RESULTS_FOLDER / "test_predictions.csv"]:
+        if not path.exists():
+            continue
         rows.extend(_read_csv(path))
     return rows
 
@@ -104,12 +110,13 @@ def _plot_bar(split, rows, metric_key, ylabel, color):
     models = [r["model"] for r in rows]
     values = [r[metric_key] for r in rows]
 
-    fig, ax = plt.subplots(figsize=(7, 4))
+    fig, ax = plt.subplots(figsize=(9, 4))
     bars = ax.bar(models, values, color=color, width=0.5)
     ax.set_title(f"{ylabel} by Model ({split})")
     ax.set_ylabel(ylabel)
     ax.set_xlabel("Model")
     ax.set_ylim(0, 1)
+    ax.tick_params(axis="x", labelrotation=20)
     for bar, val in zip(bars, values):
         ax.text(
             bar.get_x() + bar.get_width() / 2,
@@ -130,7 +137,7 @@ def _plot_negation_type_accuracy(split, rows):
     x = np.arange(len(neg_types))
     width = 0.8 / max(len(models), 1)
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(11, 5))
 
     for i, model in enumerate(models):
         model_by_type = {r["negation_type"]: r["query_accuracy"] for r in rows if r["model"] == model}
