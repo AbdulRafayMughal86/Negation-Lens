@@ -18,9 +18,6 @@ env/
 .ruff_cache/
 .ipynb_checkpoints/
 
-# Generated project outputs
-results/
-
 # Editor and system files
 .vscode/
 .idea/

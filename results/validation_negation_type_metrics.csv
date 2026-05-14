@@ -1,0 +1,17 @@
+split,model,negation_type,query_accuracy,mrr,query_cases
+validation,random,comparative,0.5,0.75,2
+validation,random,explicit,0.4928571428571429,0.7464285714285714,140
+validation,random,implicit,0.6,0.8,5
+validation,random,other,0.5148514851485149,0.7574257425742574,303
+validation,bm25,comparative,0.5,0.75,2
+validation,bm25,explicit,0.4142857142857143,0.7071428571428572,140
+validation,bm25,implicit,0.2,0.6,5
+validation,bm25,other,0.5313531353135313,0.7656765676567657,303
+validation,tfidf,comparative,0.5,0.75,2
+validation,tfidf,explicit,0.4857142857142857,0.7428571428571429,140
+validation,tfidf,implicit,0.8,0.9,5
+validation,tfidf,other,0.504950495049505,0.7524752475247525,303
+validation,sbert,comparative,0.5,0.75,2
+validation,sbert,explicit,0.55,0.775,140
+validation,sbert,implicit,0.2,0.6,5
+validation,sbert,other,0.5148514851485149,0.7574257425742574,303
