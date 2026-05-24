@@ -5,7 +5,7 @@ EXPLICIT_SUFFIX = "n't"
 IMPLICIT_KEYWORDS = ["without", "except", "lack", "lacking"]
 COMPARATIVE_PHRASES = ["less than", "more than", "fewer than", "greater than", "at least", "at most"]
 
-
+# Label the negation type of a query based on the presence of explicit keywords, implicit keywords, and comparative phrases.
 def label_negation_type(query_text):
     lowered = query_text.lower()
     words = set(re.findall(r"\b\w+\b", lowered))

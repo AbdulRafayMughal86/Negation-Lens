@@ -8,7 +8,7 @@ from nevir_data import make_query_cases
 
 MODEL_ID = "all-MiniLM-L6-v2"
 
-
+# func to compute cosine similarity between two vectors
 def cosine_similarity(vec_a, vec_b):
     dot = np.dot(vec_a, vec_b)
     norm_a = np.linalg.norm(vec_a)
@@ -17,7 +17,7 @@ def cosine_similarity(vec_a, vec_b):
         return 0.0
     return dot / (norm_a * norm_b)
 
-
+# compute sbert scores for a list of (query, document) pairs
 def make_sbert_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)

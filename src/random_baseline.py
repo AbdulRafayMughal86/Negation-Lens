@@ -7,7 +7,7 @@ from nevir_data import make_query_cases
 
 RANDOM_SEED = 42
 
-
+# make random predictions for a given split
 def make_random_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)

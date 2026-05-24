@@ -52,8 +52,7 @@ def load_all_predictions():
     return rows
 
 
-# ── Phase 16: Final Result Tables ────────────────────────────────────────────
-
+# Final Result Tables
 def build_model_comparison_table(raw_rows):
     result = []
     for r in raw_rows:
@@ -92,8 +91,7 @@ def save_final_tables(model_rows, per_type_rows):
     return model_path, per_type_path
 
 
-# ── Phase 17: Plots ───────────────────────────────────────────────────────────
-
+# Plots
 def make_plots(model_rows, per_type_rows):
     PLOTS_FOLDER.mkdir(parents=True, exist_ok=True)
     splits = sorted(set(r["split"] for r in model_rows))
@@ -157,8 +155,7 @@ def _plot_negation_type_accuracy(split, rows):
     plt.close()
 
 
-# ── Phase 18: Error Examples ──────────────────────────────────────────────────
-
+# Error Examples
 def extract_error_examples(prediction_rows, max_examples=100):
     non_random = [r for r in prediction_rows if r["model"] != "random"]
 
@@ -208,8 +205,7 @@ def save_error_examples(error_rows):
     return path
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-
+# Main function to run all phases and generate final report and plots
 def main():
     print("loading saved results...")
     raw_model_rows = load_all_model_metrics()

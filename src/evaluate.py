@@ -12,7 +12,7 @@ from tfidf_baseline import make_tfidf_predictions
 MODEL_NAMES = ["random", "bm25", "tfidf", "sbert", "monot5_3b"]
 RESULTS_FOLDER = Path("results")
 
-
+# Get file paths for saving results for a given split
 def get_result_paths(split_name):
     return {
         "predictions": RESULTS_FOLDER / f"{split_name}_predictions.csv",
@@ -20,7 +20,7 @@ def get_result_paths(split_name):
         "negation_type_metrics": RESULTS_FOLDER / f"{split_name}_negation_type_metrics.csv",
     }
 
-
+# get pridiction rows for a given model and split
 def get_prediction_rows(model_name, split_name, monot5_batch_size):
     if model_name == "random":
         return make_random_predictions(split_name)
@@ -45,14 +45,14 @@ def get_prediction_rows(model_name, split_name, monot5_batch_size):
 
     raise ValueError(f"Unknown model: {model_name}")
 
-
+# Get the list of models to run based on the input argument
 def get_models_to_run(model_name):
     if model_name == "all":
         return MODEL_NAMES
 
     return [model_name]
 
-
+# print table
 def print_metrics_table(results):
     print("model   query_acc   pairwise_acc   mrr     query_cases")
     print("-----   ---------   ------------   -----   -----------")
@@ -70,7 +70,7 @@ def print_metrics_table(results):
             f"{query_cases}"
         )
 
-
+# print negation type breakdown table
 def print_negation_type_table(split_name, results):
     print("\nnegation type breakdown:")
     print(f"{'model':<7}  {'type':<12}  {'query_acc':<10}  {'mrr':<6}  {'cases'}")
@@ -87,7 +87,7 @@ def print_negation_type_table(split_name, results):
                 f"{row['query_cases']}"
             )
 
-
+# main evaluation function to run the evaluation for a given split and model, and return the results
 def run_evaluation(split_name, model_name, monot5_batch_size):
     models_to_run = get_models_to_run(model_name)
     results = []
@@ -113,7 +113,7 @@ def run_evaluation(split_name, model_name, monot5_batch_size):
 
     return results
 
-
+# save the rows to a csv file
 def save_rows_to_csv(file_path, rows):
     if len(rows) == 0:
         return
@@ -127,7 +127,7 @@ def save_rows_to_csv(file_path, rows):
         writer.writeheader()
         writer.writerows(rows)
 
-
+# collect all prediction rows from the results for saving to csv
 def collect_prediction_rows(results):
     all_prediction_rows = []
 
@@ -137,7 +137,7 @@ def collect_prediction_rows(results):
 
     return all_prediction_rows
 
-
+# make metric rows for saving to csv
 def make_metric_rows(split_name, results):
     metric_rows = []
 
@@ -157,7 +157,7 @@ def make_metric_rows(split_name, results):
 
     return metric_rows
 
-
+# make negation type metric rows for saving to csv
 def make_negation_type_metric_rows(split_name, results):
     all_rows = []
 
@@ -177,7 +177,7 @@ def make_negation_type_metric_rows(split_name, results):
 
     return all_rows
 
-
+# Get MonoT5 scores for a list of (query, document) pairs
 def save_results(split_name, results):
     paths = get_result_paths(split_name)
 
@@ -191,7 +191,7 @@ def save_results(split_name, results):
 
     return paths
 
-
+# Get MonoT5 scores for a list of (query, document) pairs
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--split", choices=["validation", "test"], default="validation")

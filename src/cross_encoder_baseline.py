@@ -10,11 +10,12 @@ from nevir_data import make_query_cases
 MODEL_ID = "castorini/monot5-3b-msmarco-10k"
 MODEL_NAME = "monot5_3b"
 
-
+# Generate MonoT5 scores for a list of (query, document) pairs
 def make_monot5_scores(text_pairs, model_id, batch_size):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model_dtype = torch.float16 if device == "cuda" else torch.float32
 
+    # first tokenize them
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_id, torch_dtype=model_dtype)
     model.to(device)
@@ -25,6 +26,7 @@ def make_monot5_scores(text_pairs, model_id, batch_size):
 
     scores = []
 
+    # for each pair, create a prompt and get the model's score for "true" vs "false"
     for start in range(0, len(text_pairs), batch_size):
         batch_pairs = text_pairs[start : start + batch_size]
         batch_prompts = []
@@ -62,7 +64,7 @@ def make_monot5_scores(text_pairs, model_id, batch_size):
 
     return scores
 
-
+# make predictions for a given split using MonoT5
 def make_cross_encoder_predictions(
     split_name,
     model_id=MODEL_ID,

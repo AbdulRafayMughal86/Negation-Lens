@@ -5,7 +5,7 @@ from nevir_data import load_nevir_split
 from nevir_data import make_prediction_row
 from nevir_data import make_query_cases
 
-
+# Score a single query case using TF-IDF and cosine similarity
 def score_query_case_with_tfidf(query_case):
     documents = [
         query_case["doc1_text"],
@@ -23,7 +23,7 @@ def score_query_case_with_tfidf(query_case):
 
     return doc1_score, doc2_score
 
-
+# Generate TF-IDF predictions for a given split
 def make_tfidf_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)

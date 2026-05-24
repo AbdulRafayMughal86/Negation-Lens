@@ -18,7 +18,7 @@ REQUIRED_COLUMNS = [
     "doc2",
 ]
 
-
+# Load a split of the NEVIR dataset from a CSV file, checking for required columns and valid split name.
 def load_nevir_split(split_name):
     if split_name not in VALID_SPLITS:
         valid_split_text = ", ".join(VALID_SPLITS)
@@ -47,7 +47,7 @@ def load_nevir_split(split_name):
 
     return data
 
-
+# make query cases pairs
 def make_query_cases(data):
     query_cases = []
 
@@ -81,7 +81,7 @@ def make_query_cases(data):
 
     return query_cases
 
-
+# make a prediction row for a single query case and its scores for doc1 and doc2
 def make_prediction_row(split_name, model_name, query_case, doc1_score, doc2_score):
     if doc1_score >= doc2_score:
         predicted_document_label = "doc1"

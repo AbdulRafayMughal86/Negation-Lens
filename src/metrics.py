@@ -1,3 +1,4 @@
+# calculate metrics for the predictions
 def calculate_query_accuracy(prediction_rows):
     if len(prediction_rows) == 0:
         return 0.0
@@ -12,7 +13,7 @@ def calculate_query_accuracy(prediction_rows):
 
     return accuracy
 
-
+# A pair is correct only when q1 and q2 are both present and both correct.
 def calculate_pairwise_accuracy(prediction_rows):
     if len(prediction_rows) == 0:
         return 0.0
@@ -30,6 +31,7 @@ def calculate_pairwise_accuracy(prediction_rows):
     correct_pair_count = 0
     total_pair_count = 0
 
+    # for each row_id, check if both q1 and q2 are present and correct
     for row_id in predictions_by_row_id:
         row_predictions = predictions_by_row_id[row_id]
 
@@ -77,7 +79,7 @@ def calculate_mrr(prediction_rows):
 
     return mrr
 
-
+# Get MonoT5 scores for a list of (query, document) pairs
 def calculate_all_metrics(prediction_rows):
     metrics = {
         "query_accuracy": calculate_query_accuracy(prediction_rows),
@@ -87,7 +89,7 @@ def calculate_all_metrics(prediction_rows):
 
     return metrics
 
-
+# Calculate metrics for each negation type
 def calculate_per_type_metrics(prediction_rows):
     rows_by_type = {}
 

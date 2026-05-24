@@ -4,14 +4,14 @@ from nevir_data import load_nevir_split
 from nevir_data import make_prediction_row
 from nevir_data import make_query_cases
 
-
+# split the text into tokens, lowercasing and splitting on whitespace
 def tokenize_text(text):
     lowercase_text = text.lower()
     words = lowercase_text.split()
 
     return words
 
-
+# Score a single query case using BM25
 def score_query_case_with_bm25(query_case):
     document_tokens = [
         tokenize_text(query_case["doc1_text"]),
@@ -28,7 +28,7 @@ def score_query_case_with_bm25(query_case):
 
     return doc1_score, doc2_score
 
-
+# Generate BM25 predictions for a given split
 def make_bm25_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)
