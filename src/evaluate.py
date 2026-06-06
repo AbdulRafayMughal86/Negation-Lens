@@ -20,7 +20,7 @@ def get_result_paths(split_name):
         "negation_type_metrics": RESULTS_FOLDER / f"{split_name}_negation_type_metrics.csv",
     }
 
-# get pridiction rows for a given model and split
+# get prediction rows for a given model and split
 def get_prediction_rows(model_name, split_name, monot5_batch_size):
     if model_name == "random":
         return make_random_predictions(split_name)
@@ -177,7 +177,7 @@ def make_negation_type_metric_rows(split_name, results):
 
     return all_rows
 
-# Get MonoT5 scores for a list of (query, document) pairs
+# Save evaluation results to CSV files
 def save_results(split_name, results):
     paths = get_result_paths(split_name)
 
@@ -191,8 +191,9 @@ def save_results(split_name, results):
 
     return paths
 
-# Get MonoT5 scores for a list of (query, document) pairs
+# Main function
 def main():
+    # parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("--split", choices=["validation", "test"], default="validation")
     parser.add_argument(

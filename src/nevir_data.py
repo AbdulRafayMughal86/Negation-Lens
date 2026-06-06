@@ -47,7 +47,7 @@ def load_nevir_split(split_name):
 
     return data
 
-# make query cases pairs
+# Convert each dataset row into two query cases 
 def make_query_cases(data):
     query_cases = []
 

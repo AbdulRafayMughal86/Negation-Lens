@@ -79,7 +79,7 @@ def calculate_mrr(prediction_rows):
 
     return mrr
 
-# Get MonoT5 scores for a list of (query, document) pairs
+# Get all main metrics
 def calculate_all_metrics(prediction_rows):
     metrics = {
         "query_accuracy": calculate_query_accuracy(prediction_rows),

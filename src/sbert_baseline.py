@@ -17,7 +17,7 @@ def cosine_similarity(vec_a, vec_b):
         return 0.0
     return dot / (norm_a * norm_b)
 
-# compute sbert scores for a list of (query, document) pairs
+# load data and return prediction rows
 def make_sbert_predictions(split_name):
     data = load_nevir_split(split_name)
     query_cases = make_query_cases(data)
